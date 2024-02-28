@@ -39,6 +39,11 @@ aside {
 .nav-row i {
   width: 20%;
   color: #64748b;
+  font-size: 12px;
+}
+
+.nav-item i{
+  font-size: 18px;
 }
 
 nav section span {
@@ -60,46 +65,46 @@ nav a:hover {
   font-weight: 500;
 }
 
+.header-right{
+  width: 20%;
+}
+
+.avatar{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+}
+
 .create-order-content {
   width: 85%;
   margin-left: 18%;
   margin-right: 3%;
 }
 
-.order-title a {
+.create-order-title a {
   margin-right: 5px;
   color: #767676;
 }
 
-.order-title a:hover {
+.create-order-title a:hover {
   color: #767676;
   opacity: 0.75;
 }
 
-.order-title span {
+.create-order-title span {
   font-weight: 500;
   font-size: 20px;
   color: #0f172a;
 }
 
 .btn-cancel {
-  width: 160px;
-  height: 48px;
   background-color: #fff;
-  padding: 4px 12px 4px 12px;
+  padding: 5px 30px;
   border-radius: 8px;
   border: transparent;
 }
 
-.btn-create-order {
-  width: 160px;
-  height: 48px;
-  background-color: #1890ff;
-  padding: 4px 12px 4px 12px;
-  border-radius: 8px;
-  border: transparent;
-  color: #fff;
-}
 
 .create-order-body-detail {
   display: flex;

@@ -28,7 +28,7 @@
               <i class="fa-solid fa-house" style="color: #0f172a"></i>
               <a href="./index.html">Trang chủ</a>
             </div>
-            <i style="font-size: 12px"></i>
+            <i></i>
           </section>
           <a
             class="nav-row"
@@ -42,7 +42,7 @@
               <i class="fa-solid fa-chart-line"></i>
               <span class="nav-item-active">Kinh doanh</span>
             </div>
-            <i class="fa-solid fa-chevron-down" style="font-size: 12px"></i>
+            <i class="fa-solid fa-chevron-down"></i>
           </a>
           <div class="collapse" id="businessCollapse">
             <a href="./sellingTour.html"><p>Tour đang bán</p></a>
@@ -60,7 +60,7 @@
               <i class="fa-regular fa-rectangle-list"></i>
               <span>Quản lý tour</span>
             </div>
-            <i class="fa-solid fa-chevron-up" style="font-size: 12px"></i>
+            <i class="fa-solid fa-chevron-up"></i>
           </a>
           <div class="collapse" id="manageTourCollapse">
             <a href="./schedule.html"><p>Lịch trình</p></a>
@@ -71,7 +71,7 @@
               <i class="fa-solid fa-user-group"></i>
               <a href="./customer.html">Khách hàng</a>
             </div>
-            <i style="font-size: 12px"></i>
+            <i></i>
           </section>
           <a
             class="nav-row"
@@ -85,7 +85,7 @@
               <i class="fa-solid fa-calculator"></i>
               <span>Kế toán</span>
             </div>
-            <i class="fa-solid fa-chevron-down" style="font-size: 12px"></i>
+            <i class="fa-solid fa-chevron-down"></i>
           </a>
           <div class="collapse" id="accountantCollapse">
             <a href="./purchaseList.html"><p>Danh sách phiếu chi</p></a>
@@ -96,31 +96,46 @@
               <i class="fa-solid fa-circle-exclamation"></i>
               <a href="./manage.html">Quản trị</a>
             </div>
-            <i style="font-size: 12px"></i>
+            <i></i>
           </section>
         </nav>
       </aside>
-      <section class="home-content">
+      <section class="order-content">
         <header class="d-flex justify-content-between mb-4 mt-3">
           <h3>Đơn hàng</h3>
-          <div class="d-flex justify-content-between align-items-center">
+          <div
+            class="d-flex justify-content-between align-items-center header-right"
+          >
             <i class="fa-regular fa-bell"></i>
-            <div
-              class="avatar"
-              style="
-                border-radius: 50%;
-                width: 40px;
-                height: 40px;
-                background-color: black;
-              "
-            ></div>
+            <div class="avatar"></div>
             <div class="d-flex flex-column justify-content-center">
               <p class="m-0 fw-medium">Hoang</p>
               <p class="m-0">Administrator</p>
             </div>
-            <i class="fa-solid fa-chevron-down" style="font-size: 12px"></i>
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
         </header>
+        <section class="d-flex justify-content-between align-items-center">
+          <div class="order-title">
+            <a href="./sellingTour.html"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <span class="order-name">Đơn hàng</span>
+            <span class="order-id">#TQ123467XD</span>
+            <button class="in-progress">Đang xử lí</button>
+          </div>
+          <div class="order-title-btn">
+            <button class="btn btn-outline-danger btn-cancel-order">
+              Hủy Đơn
+            </button>
+            <button class="btn btn-outline-warning btn-edit-order">
+              Chỉnh Sửa
+            </button>
+            <button class="btn btn-primary btn-transaction-success">
+              Chuyển Thành Công
+            </button>
+          </div>
+        </section>
       </section>
     </main>
     <script

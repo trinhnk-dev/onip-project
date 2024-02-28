@@ -39,6 +39,11 @@ aside {
 .nav-row i {
   width: 20%;
   color: #64748b;
+  font-size: 12px;
+}
+
+.nav-item i{
+  font-size: 18px;
 }
 
 nav section span {
@@ -58,6 +63,17 @@ nav a:hover {
 .nav-item-active {
   color: #0f172a;
   font-weight: 500;
+}
+
+.header-right{
+  width: 20%;
+}
+
+.avatar{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
 }
 
 .tour-content {
