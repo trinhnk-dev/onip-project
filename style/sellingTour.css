@@ -143,13 +143,6 @@ nav a:hover {
   font-size: 14px;
 }
 
-.tour-detail-action button {
-  background-color: #1890ff;
-  border: transparent;
-  padding: 4px 12px 4px 12px;
-  border-radius: 8px;
-}
-
 .tour-detail-action a {
   color: #fff;
   text-decoration: none;

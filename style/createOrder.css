@@ -66,8 +66,14 @@ nav a:hover {
   margin-right: 3%;
 }
 
-.order-title i {
+.order-title a {
   margin-right: 5px;
+  color: #767676;
+}
+
+.order-title a:hover {
+  color: #767676;
+  opacity: 0.75;
 }
 
 .order-title span {
@@ -108,17 +114,17 @@ nav a:hover {
   border-radius: 8px;
 }
 
-.create-order-body-main h6{
-    margin-bottom: 20px;
-    font-weight: 600;
+.create-order-body-main h6 {
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
-.form-control{
-    padding: 10px 16px;
+.form-control {
+  padding: 10px 16px;
 }
 
-.create-order-body-name{
-    margin-bottom: 30px;
+.create-order-body-name {
+  margin-bottom: 30px;
 }
 
 .create-order-body-box {
@@ -130,98 +136,112 @@ nav a:hover {
 
 .create-order-body-item {
   width: 49%;
-  color: #64748B;
+  color: #64748b;
 }
 
-.create-order-receive{
-    padding: 16px;
-    border: 1px solid #EDF2F7;
-    border-radius: 8px;
-    background-color: #EDF2F7;
-    
+.create-order-receive {
+  padding: 16px;
+  border: 1px solid #edf2f7;
+  border-radius: 8px;
+  background-color: #edf2f7;
 }
 
-.create-order-receive span{
-    font-weight: 500;
-    font-size: 16px;
-    margin-right: 20px;
+.create-order-receive span {
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 20px;
 }
 
-.create-order-receive button{
-    background-color: #1890FF;
-    padding: 10px 12px;
-    border-radius: 8px;
-    border: transparent;
-    color: #fff;
+.create-order-quantity {
+  display: flex;
 }
 
-.create-order-quantity{
-    display: flex;
+.create-order-quantity button {
+  background-color: #f8fafc;
+  color: #0f172a;
+  border: transparent;
+  border-radius: 8px;
+  padding: 12px 0px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.create-order-quantity button{
-    background-color: #F8FAFC;
-    color: #0F172A;
-    border: transparent;
-    border-radius: 8px;
-    padding: 12px 0px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.create-order-quantity span {
+  background-color: #fff;
+  border: 1px solid #e8ebf0;
+  border-radius: 8px;
+  padding: 12px 0px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 5px;
 }
 
-.create-order-quantity span{
-    background-color: #fff;
-    border: 1px solid #E8EBF0;
-    border-radius: 8px;
-    padding: 12px 0px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0px 5px;
-}
-
-.create-order-body-main td{
-    vertical-align: middle;
+.create-order-body-main td {
+  vertical-align: middle;
 }
 
 .create-order-body-bill {
-    width: 30%;
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 8px;
-    height: fit-content;
-  }
-
-  .create-order-body-bill h6{
-    margin-bottom: 20px;
-    font-weight: 600;
+  width: 30%;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  height: fit-content;
 }
 
-.create-order-body-bill div{
-    display: flex;
-    justify-content: space-between;
+.create-order-body-bill h6 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.create-order-body-bill div {
+  display: flex;
+  justify-content: space-between;
 }
 
 .create-order-body-bill div p {
-    font-size: 14px;
-    font-weight: 400;
+  font-size: 14px;
+  font-weight: 400;
 }
 
-.discount-label{
-    color: #1D92FF;
+.discount-label {
+  color: #1d92ff;
 }
 
-.create-order-body-bill div .payment-label{
-    font-weight: 600;
+.create-order-body-bill div .payment-label {
+  font-weight: 600;
 }
 
-.create-order-body-bill div .payment-amount{
-    color: #1D92FF;
-    font-size: 16px;
-    font-weight: 600;
+.create-order-body-bill div .payment-amount {
+  color: #1d92ff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.modal-content {
+  --bs-modal-header-border-color: none;
+  --bs-modal-footer-border-color: none;
+}
+
+.create-receive-bill-modal input,
+textarea {
+  border: 1px solid #edf2f7 !important;
+}
+
+.btn-cancel-modal {
+  background-color: #eff5ff;
+  padding: 6px 12px;
+  width: 25%;
+  transition: 0.15s all;
+}
+
+.btn-cancel-modal:hover {
+  background-color: #eff5ff;
+  opacity: 0.75;
+  transition: 0.15s all;
 }
