@@ -66,6 +66,26 @@ nav a:hover {
   margin-right: 3%;
 }
 
+.tour-filter {
+  display: flex;
+}
+
+.tour-filter .tour-filter-item {
+  width: 20%;
+  margin-right: 5px;
+}
+
+.tour-filter .tour-filter-item label{
+  color: #94A3B8;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* .tour-filter .tour-filter-item option{
+  font-weight: 500;
+  font-size: 14px;
+} */
+
 .tour-detail-table {
   border-radius: 4px;
   overflow: hidden;
@@ -77,12 +97,21 @@ nav a:hover {
   background-color: #fff;
 }
 
-.tour-detail p {
-  margin: 0;
+.tour-detail tr {
+  padding: 8px 0px;
 }
 
-.tour-detail td{
+.tour-detail th {
+  padding: 20px 16px;
+}
+
+.tour-detail td {
+  padding: 10px 0px 10px 16px;
   vertical-align: middle;
+}
+
+.tour-detail p {
+  margin: 0;
 }
 
 .tour-detail-id {
