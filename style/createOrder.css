@@ -98,14 +98,14 @@ nav a:hover {
 .create-order-body-detail {
   display: flex;
   justify-content: space-between;
-  background-color: #fff;
-  margin: 10px 0px;
-  padding: 40px;
-  border-radius: 8px;
+  margin: 20px 0px;
 }
 
 .create-order-body-main {
-  width: 70%;
+  width: 65%;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
 }
 
 .create-order-body-main h6{
@@ -155,10 +155,6 @@ nav a:hover {
     color: #fff;
 }
 
-.create-order-body-bill {
-  width: 20%;
-}
-
 .create-order-quantity{
     display: flex;
 }
@@ -191,4 +187,41 @@ nav a:hover {
 
 .create-order-body-main td{
     vertical-align: middle;
+}
+
+.create-order-body-bill {
+    width: 30%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    height: fit-content;
+  }
+
+  .create-order-body-bill h6{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.create-order-body-bill div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-order-body-bill div p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.discount-label{
+    color: #1D92FF;
+}
+
+.create-order-body-bill div .payment-label{
+    font-weight: 600;
+}
+
+.create-order-body-bill div .payment-amount{
+    color: #1D92FF;
+    font-size: 16px;
+    font-weight: 600;
 }
