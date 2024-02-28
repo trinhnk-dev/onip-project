@@ -81,6 +81,10 @@ nav a:hover {
   margin: 0;
 }
 
+.tour-detail td{
+  vertical-align: middle;
+}
+
 .tour-detail-id {
   color: #1890ff !important;
   font-size: 16px;
@@ -88,7 +92,7 @@ nav a:hover {
   font-weight: 500;
 }
 
-.tour-detail-information{
+.tour-detail-information {
   width: 30%;
 }
 
@@ -141,10 +145,14 @@ nav a:hover {
 
 .tour-detail-action button {
   background-color: #1890ff;
-  color: #fff;
   border: transparent;
   padding: 4px 12px 4px 12px;
   border-radius: 8px;
+}
+
+.tour-detail-action a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .tour-detail-action-disable button {
@@ -152,7 +160,7 @@ nav a:hover {
   padding: 4px 12px 4px 12px;
   border: transparent;
   border-radius: 8px;
-  color: #94a3b8;
+
   font-size: 14px;
   font-weight: 600;
 }
