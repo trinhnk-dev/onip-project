@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f6f9;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  width: 15%;
+  overflow: auto;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  padding-left: 20px;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.nav-item {
+  width: 90%;
+}
+
+.nav-row i {
+  width: 20%;
+  color: #64748b;
+}
+
+nav section span {
+  width: 70%;
+}
+
+nav a {
+  color: #64748b;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.nav-item-active {
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.tour-content {
+  width: 85%;
+  margin-left: 18%;
+  margin-right: 3%;
+}
+
+.tour-detail-table {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.tour-detail {
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.tour-detail p {
+  margin: 0;
+}
+
+.tour-detail-id {
+  color: #1890ff !important;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.tour-detail-information{
+  width: 30%;
+}
+
+.tour-detail-sold {
+  text-align: center;
+}
+
+.tour-detail-holding {
+  text-align: center;
+}
+
+.tour-detail-empty {
+  text-align: center;
+}
+
+.tour-detail-full {
+  text-align: center;
+}
+
+.tour-detail-empty h6 {
+  color: #1dbe68;
+}
+
+.tour-detail-status {
+  text-align: center;
+}
+
+.tour-detail-status button {
+  background-color: #f0fff4;
+  color: #10a35e;
+  border: transparent;
+  padding: 4px 16px 4px 16px;
+  border-radius: 200px;
+}
+
+.tour-detail-status-full {
+  text-align: center;
+}
+
+.tour-detail-status-full button {
+  background-color: #eff5ff;
+  color: #1890ff;
+  border: transparent;
+  padding: 4px 12px 4px 12px;
+  border-radius: 200px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 14px;
+}
+
+.tour-detail-action button {
+  background-color: #1890ff;
+  color: #fff;
+  border: transparent;
+  padding: 4px 12px 4px 12px;
+  border-radius: 8px;
+}
+
+.tour-detail-action-disable button {
+  background-color: #cbd5e1;
+  padding: 4px 12px 4px 12px;
+  border: transparent;
+  border-radius: 8px;
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 600;
+}

@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f6f9;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  width: 15%;
+  overflow: auto;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  padding-left: 20px;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.nav-item {
+  width: 90%;
+}
+
+.nav-row i {
+  width: 20%;
+  color: #64748b;
+}
+
+nav section span {
+  width: 70%;
+}
+
+nav a {
+  color: #64748b;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.nav-item-active {
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.home-content {
+  width: 85%;
+  margin-left: 18%;
+  margin-right: 3%;
+}
+
+.home-report {
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.home-report-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: #f8fafc;
+  margin-right: 20px;
+}
+
+.home-report p {
+  margin: 0;
+  border-right: 1px solid #cbd5e1;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.home-report-box div {
+  margin-left: 20px;
+}
+
+.home-report-box h6 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.home-report-box a {
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  color: #1890ff;
+}
+
+.home-detail .total-revenue {
+  color: #1890ff;
+}
+
+.home-detail{
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.home-detail-table{
+  border-radius: 4px; 
+  overflow: hidden;
+}
