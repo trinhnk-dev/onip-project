@@ -26,9 +26,9 @@
           <section class="nav-row">
             <div class="nav-item">
               <i class="fa-solid fa-house" style="color: #0f172a"></i>
-              <a href="./index.html">Trang chủ</a>
+              <a href="./index.html" >Trang chủ</a>
             </div>
-            <i style="font-size: 12px"></i>
+            <i></i>
           </section>
           <a
             class="nav-row"
@@ -40,12 +40,12 @@
           >
             <div class="nav-item">
               <i class="fa-solid fa-chart-line"></i>
-              <span>Kinh doanh</span>
+              <span class="nav-item-active">Kinh doanh</span>
             </div>
-            <i class="fa-solid fa-chevron-down" style="font-size: 12px"></i>
+            <i class="fa-solid fa-chevron-down" ></i>
           </a>
           <div class="collapse" id="businessCollapse">
-            <a href="./sellingTour.html"><p>Tour đang bán</p></a>
+            <a href="./sellingTour.html" class="sub-nav-active"><p>Tour đang bán</p></a>
             <a href="./orderDetail.html"><p>Đơn hàng</p></a>
           </div>
           <a
@@ -53,19 +53,17 @@
             data-bs-toggle="collapse"
             href="#manageTourCollapse"
             role="button"
-            aria-expanded="true"
+            aria-expanded="false"
             aria-controls="manageTourCollapse"
           >
             <div class="nav-item mb-2">
               <i class="fa-regular fa-rectangle-list"></i>
-              <span class="nav-item-active">Quản lý tour</span>
+              <span>Quản lý tour</span>
             </div>
-            <i class="fa-solid fa-chevron-up" style="font-size: 12px"></i>
+            <i class="fa-solid fa-chevron-up" ></i>
           </a>
-          <div class="collapse" id="manageTourCollapse" aria-expanded="true">
-            <a href="./schedule.html" class="sub-nav-active"
-              ><p>Lịch trình</p></a
-            >
+          <div class="collapse" id="manageTourCollapse">
+            <a href="./schedule.html"><p>Lịch trình</p></a>
             <a href="./sampleProduct.html"><p>Sản phẩm mẫu</p></a>
           </div>
           <section class="nav-row">
@@ -73,7 +71,7 @@
               <i class="fa-solid fa-user-group"></i>
               <a href="./customer.html">Khách hàng</a>
             </div>
-            <i style="font-size: 12px"></i>
+            <i ></i>
           </section>
           <a
             class="nav-row"
@@ -87,7 +85,7 @@
               <i class="fa-solid fa-calculator"></i>
               <span>Kế toán</span>
             </div>
-            <i class="fa-solid fa-chevron-down" style="font-size: 12px"></i>
+            <i class="fa-solid fa-chevron-down" ></i>
           </a>
           <div class="collapse" id="accountantCollapse">
             <a href="./purchaseList.html"><p>Danh sách phiếu chi</p></a>
@@ -98,31 +96,187 @@
               <i class="fa-solid fa-circle-exclamation"></i>
               <a href="./manage.html">Quản trị</a>
             </div>
-            <i style="font-size: 12px"></i>
+            <i ></i>
           </section>
         </nav>
       </aside>
-      <section class="home-content">
+      <section class="schedule-content">
         <header class="d-flex justify-content-between mb-4 mt-3">
           <h3>Lịch trình</h3>
-          <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex justify-content-around align-items-center header-right">
             <i class="fa-regular fa-bell"></i>
             <div
               class="avatar"
-              style="
-                border-radius: 50%;
-                width: 40px;
-                height: 40px;
-                background-color: black;
-              "
             ></div>
             <div class="d-flex flex-column justify-content-center">
               <p class="m-0 fw-medium">Hoang</p>
               <p class="m-0">Administrator</p>
             </div>
-            <i class="fa-solid fa-chevron-down" style="font-size: 12px"></i>
+            <i class="fa-solid fa-chevron-down" ></i>
           </div>
         </header>
+        <!-- <section class="tour-filter">
+          <div class="tour-filter-item">
+            <label class="form-label">Điểm đến</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Tất cả</option>
+              <option value="chinese">Trung quốc</option>
+              <option value="thailand">Thái Lan</option>
+              <option value="japan">Nhật bản</option>
+            </select>
+          </div>
+          <div class="tour-filter-item">
+            <label class="form-label">Khởi hành </label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Tất cả</option>
+              <option value="30">30 ngày tới</option>
+              <option value="90">90 ngày tới</option>
+              <option value="custom">Tùy chọn ngày</option>
+            </select>
+          </div>
+          <div class="tour-filter-item">
+            <label class="form-label">Tìm kiếm</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+              <input type="text" class="form-control" placeholder="Nhập tìm kiếm" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+          </div>
+        </section> -->
+         <section class="schedule-detail">
+          <table class="table schedule-detail-table">
+            <tr>
+              <th>Mã tour</th>
+              <th>Thông tin tour</th>
+              <th>Khởi hành</th>
+              <th>Giá bán</th>
+              <th>Đã bán</th>
+              <th>Đang giữ</th>
+              <th>Còn chỗ</th>
+              <th>Trạng thái</th>
+              <th></th>
+            </tr>
+            <tr >
+              <td class="schedule-detail-id">PT6921</td>
+              <td>
+                <p>Tour Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu 10N9D khởi hành ngày 25/11</p>
+                <p>Thời lượng: 5 ngày 4 đêm</p>
+                <p>Điểm đến: Trung quốc</p>
+              </td>
+              <td>15/12/2023</td>
+              <td>
+                <p>Người lớn</p>
+                <h6>45,000,000</h6>
+              </td>
+              <td class="schedule-detail-sold">
+                <p>Đã bán</p>
+                <h6>5/40</h6>
+              </td>
+              <td class="schedule-detail-holding">
+                <p>Đang giữ</p>
+                <h6>5</h6>
+              </td>
+              <td class="schedule-detail-empty">
+                <p>Còn chỗ</p>
+                <h6>30</h6>
+              </td>
+              <td class="schedule-detail-status">
+                <button>Mở bán</button>
+              </td>
+              <td class="schedule-detail-action"><a href="./scheduleDetail.html"><i class="fa-solid fa-ellipsis-vertical"></i></a></td>
+            </tr>
+            <tr >
+              <td class="schedule-detail-id">PT6921</td>
+              <td>
+                <p>Tour Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu 10N9D khởi hành ngày 25/11</p>
+                <p>Thời lượng: 5 ngày 4 đêm</p>
+                <p>Điểm đến: Trung quốc</p>
+              </td>
+              <td>15/12/2023</td>
+              <td>
+                <p>Người lớn</p>
+                <h6>45,000,000</h6>
+              </td>
+              <td class="schedule-detail-sold">
+                <p>Đã bán</p>
+                <h6>5/40</h6>
+              </td>
+              <td class="schedule-detail-holding">
+                <p>Đang giữ</p>
+                <h6>5</h6>
+              </td>
+              <td class="schedule-detail-empty">
+                <p>Còn chỗ</p>
+                <h6>30</h6>
+              </td>
+              <td class="schedule-detail-status">
+                <button>Mở bán</button>
+              </td>
+              <td class="schedule-detail-action"><a href="./scheduleDetail.html"><i class="fa-solid fa-ellipsis-vertical"></i></a></td>
+            </tr>
+            <tr >
+              <td class="schedule-detail-id">PT6921</td>
+              <td>
+                <p>Tour Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu 10N9D khởi hành ngày 25/11</p>
+                <p>Thời lượng: 5 ngày 4 đêm</p>
+                <p>Điểm đến: Trung quốc</p>
+              </td>
+              <td>15/12/2023</td>
+              <td>
+                <p>Người lớn</p>
+                <h6>45,000,000</h6>
+              </td>
+              <td class="schedule-detail-sold">
+                <p>Đã bán</p>
+                <h6>5/40</h6>
+              </td>
+              <td class="schedule-detail-holding">
+                <p>Đang giữ</p>
+                <h6>5</h6>
+              </td>
+              <td class="schedule-detail-empty">
+                <p>Còn chỗ</p>
+                <h6>30</h6>
+              </td>
+              <td class="schedule-detail-status">
+                <button>Mở bán</button>
+              </td>
+              <td class="schedule-detail-action"><a href="./scheduleDetail.html"><i class="fa-solid fa-ellipsis-vertical"></i></a></td>
+            </tr>
+            <tr >
+              <td class="schedule-detail-id">PT6921</td>
+              <td class="schedule-detail-information">
+                <p>Tour Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu 10N9D khởi hành ngày 25/11</p>
+                <p>Thời lượng: 5 ngày 4 đêm</p>
+                <p>Điểm đến: Trung quốc</p>
+              </td>
+              <td>15/12/2023</td>
+              <td>
+                <p>Người lớn</p>
+                <h6>45,000,000</h6>
+              </td>
+              <td class="schedule-detail-sold">
+                <p>Đã bán</p>
+                <h6>5/40</h6>
+              </td>
+              <td class="schedule-detail-holding">
+                <p>Đang giữ</p>
+                <h6>--</h6>
+              </td>
+              <td class="schedule-detail-full">
+                <p>Còn chỗ</p>
+                <h6>--</h6>
+              </td>
+              <td class="schedule-detail-status-full">
+                <button>Full</button>
+              </td>
+              <td class="schedule-detail-action">
+                <a href="./scheduleDetail.html"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+              </td>
+            </tr>
+            
+          </table>
+        </section> 
+      </section>
       </section>
     </main>
     <script
