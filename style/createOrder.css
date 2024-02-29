@@ -249,3 +249,7 @@ textarea {
   opacity: 0.75;
   transition: 0.15s all;
 }
+
+.modal-add-group-list{
+  width: 200px;
+}

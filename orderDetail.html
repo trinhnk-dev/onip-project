@@ -138,33 +138,53 @@
         </section>
         <section class="order-detail-button-option">
           <button>In đơn hàng <i class="fa-solid fa-chevron-down"></i></button>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#sendEmail">Gửi Email <i class="fa-solid fa-chevron-down"></i></button>
+          <button
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#sendEmail"
+          >
+            Gửi Email <i class="fa-solid fa-chevron-down"></i>
+          </button>
           <button>Gửi Zalo <i class="fa-solid fa-chevron-down"></i></button>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#contactNote">Note liên hệ</button>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#remindCalendar">Thêm lịch nhắc</button>
+          <button
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#contactNote"
+          >
+            Note liên hệ
+          </button>
+          <button
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#remindCalendar"
+          >
+            Thêm lịch nhắc
+          </button>
         </section>
         <section class="order-detail-body-detail">
           <section class="order-detail-body-main">
             <h6>Thông tin người đặt</h6>
             <section class="order-detail-information">
-              <div class="order-detail-information-service d-flex ">
+              <div class="order-detail-information-service d-flex">
                 <p>Dịch vụ</p>
-                <p>Tour trung quốc 7N6Đ thượng hải - hàng châu - tô châu - bắc
-                  kinh</p>
+                <p>
+                  Tour trung quốc 7N6Đ thượng hải - hàng châu - tô châu - bắc
+                  kinh
+                </p>
               </div>
-              <div class="order-detail-information-user d-flex ">
+              <div class="order-detail-information-user d-flex">
                 <p>Người đặt</p>
                 <p>[Chị] Phan Thị Mi Mai</p>
               </div>
-              <div class="order-detail-information-phone d-flex ">
+              <div class="order-detail-information-phone d-flex">
                 <p>Số điện thoại</p>
                 <p>0943-345-679</p>
               </div>
-              <div class="order-detail-information-email d-flex ">
+              <div class="order-detail-information-email d-flex">
                 <p>Email:</p>
                 <p>--</p>
               </div>
-              <div class="order-detail-information-note d-flex ">
+              <div class="order-detail-information-note d-flex">
                 <p>Ghi chú đơn hàng</p>
                 <p>--</p>
               </div>
@@ -269,7 +289,12 @@
                 <h6 class="order-detail-title">
                   Chi tiết đoàn <span>(4/4 người có thông tin)</span>
                 </h6>
-                <button class="btn btn-outline-primary">
+                <button
+                  class="btn btn-outline-primary"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#addGroupList"
+                >
                   Thêm <i class="fa-solid fa-circle-plus"></i>
                 </button>
               </div>
@@ -365,23 +390,27 @@
                   ></button>
                 </div>
                 <div class="modal-body">
-                      <label class="form-label"
-                        >Tiêu đề <span style="color: red">*</span></label
-                      >
-                      <input type="text" class="form-control" />
+                  <label class="form-label"
+                    >Tiêu đề <span style="color: red">*</span></label
+                  >
+                  <input type="text" class="form-control" />
 
-                      <label class="form-label"
-                        >Người nhận <span style="color: red">*</span></label
-                      >
-                      <input type="text" class="form-control" />
+                  <label class="form-label"
+                    >Người nhận <span style="color: red">*</span></label
+                  >
+                  <input type="text" class="form-control" />
                   <div>
-                    <label class="form-label"
-                      >Tệp đính kèm</label
-                    >
-                    <input type="upload" class="form-control" placeholder="Upload"/>
+                    <label class="form-label">Tệp đính kèm</label>
+                    <input
+                      type="upload"
+                      class="form-control"
+                      placeholder="Upload"
+                    />
                   </div>
                   <div>
-                    <label class="form-label">Nội dung <span style="color: red">*</span></label>
+                    <label class="form-label"
+                      >Nội dung <span style="color: red">*</span></label
+                    >
                     <textarea
                       class="form-control"
                       rows="10"
@@ -435,10 +464,11 @@
                     </div>
 
                     <div class="order-detail-contact-note-item">
-                      <label class="form-label"
-                        >Kênh trao đổi</label
+                      <label class="form-label">Kênh trao đổi</label>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
                       >
-                      <select class="form-select" aria-label="Default select example">
                         <option selected>Gọi điện</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -448,7 +478,8 @@
                   </div>
                   <div>
                     <label class="form-label"
-                      >Nội dung chăm sóc <span style="color: red">*</span></label
+                      >Nội dung chăm sóc
+                      <span style="color: red">*</span></label
                     >
                     <textarea
                       class="form-control"
@@ -456,10 +487,12 @@
                       placeholder="Nhập nội dung"
                     ></textarea>
                   </div>
-                  <label class="form-label"
-                        >Tệp đính kèm</label
-                      >
-                      <input type="text" class="form-control" placeholder="Dán liên kết"/>
+                  <label class="form-label">Tệp đính kèm</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Dán liên kết"
+                  />
                 </div>
                 <div class="modal-footer">
                   <button
@@ -469,9 +502,7 @@
                   >
                     Hủy
                   </button>
-                  <button type="button" class="btn btn-primary">
-                    Thêm
-                  </button>
+                  <button type="button" class="btn btn-primary">Thêm</button>
                 </div>
               </div>
             </div>
@@ -499,28 +530,302 @@
                 </div>
                 <div class="modal-body">
                   <label class="form-label"
-                        >Thời gian <span style="color: red">*</span></label
-                      >
-                      <input type="text" class="form-control" />
-                      <label class="form-label"
-                      >Nội dung <span style="color: red">*</span></label
+                    >Thời gian <span style="color: red">*</span></label
+                  >
+                  <input type="text" class="form-control" />
+                  <label class="form-label"
+                    >Nội dung <span style="color: red">*</span></label
+                  >
+                  <textarea
+                    class="form-control"
+                    rows="2"
+                    placeholder="Nhập nội dung"
+                  ></textarea>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-cancel-modal"
+                      data-bs-dismiss="modal"
                     >
-                    <textarea
-                      class="form-control"
-                      rows="2"
-                      placeholder="Nhập nội dung"
-                    ></textarea>
-                <div class="modal-footer">
+                      Hủy
+                    </button>
+                    <button type="button" class="btn btn-primary">Thêm</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade modal-add-group-list"
+            id="addGroupList"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    Thêm Danh sách đoàn
+                  </h1>
                   <button
                     type="button"
-                    class="btn btn-cancel-modal"
+                    class="btn-close"
                     data-bs-dismiss="modal"
-                  >
-                    Hủy
-                  </button>
-                  <button type="button" class="btn btn-primary">
-                    Thêm
-                  </button>
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p class="modal-add-group-list-added">Đã thêm 3/4</p>
+                  <table class="table table-bordered">
+                    <thead class="table-light">
+                      <tr>
+                        <th>STT</th>
+                        <th>Họ Tên</th>
+                        <th>Số điện thoại</th>
+                        <th>CCCD/CMND</th>
+                        <th>Ngày sinh</th>
+                        <th>Giới tính</th>
+                        <th>Email</th>
+                        <th>Ghi chú</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="Nguyễn Thị Mi"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="0937 456 455"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="123456789"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="10/1/1957"
+                          />
+                        </td>
+                        <td>
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Nam</option>
+                            <option value="1">Nữ</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập nội dung"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập nội dung"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="Trần Anh"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="0937 456 008"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="123456789"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập nội dung"
+                          />
+                        </td>
+                        <td>
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Chọn</option>
+                            <option >Nam</option>
+                            <option value="1">Nữ</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập nội dung"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập nội dung"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="Hà Phạm"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="0937 456 008"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="123456789"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập nội dung"
+                          />
+                        </td>
+                        <td>
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Chọn</option>
+                            <option >Nam</option>
+                            <option value="1">Nữ</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập nội dung"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập nội dung"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="Nhật Anh"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="0937 456 008"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập nội dung"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập nội dung"
+                          />
+                        </td>
+                        <td>
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Chọn</option>
+                            <option >Nam</option>
+                            <option value="1">Nữ</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập nội dung"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập nội dung"
+                          />
+                        </td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-cancel-modal"
+                      data-bs-dismiss="modal"
+                    >
+                      Hủy
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Lưu thay đổi
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

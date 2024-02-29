@@ -456,3 +456,29 @@ textarea {
 .order-detail-contact-note-box div{
   width: 48%
 }
+
+.modal-add-group-list-added{
+  text-align: right;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+}
+
+table{
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.modal-add-group-list .form-control{
+  padding: .375rem .75rem;
+  margin-bottom: 0;
+}
+
+.modal-add-group-list th{
+  padding: 20px 16px;
+}
+
+.modal-add-group-list td{
+  padding: 10px 16px;
+}
