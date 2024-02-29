@@ -132,7 +132,7 @@ nav a:hover {
   margin: 0px 5px;
 }
 
-.btn-edit-order a{
+.btn-edit-order a {
   text-decoration: none;
   color: #1d92ff;
 }
@@ -167,11 +167,18 @@ nav a:hover {
   color: #0f172a;
 }
 
-.btn-cancel {
+.btn-cancel-edit {
   background-color: #fff;
-  padding: 5px 30px;
-  border-radius: 8px;
-  border: transparent;
+  border: 1px solid #edf2f7;
+}
+
+.btn-cancel-edit a {
+  color: #64748b;
+  text-decoration: none;
+}
+
+.btn-save-change {
+  margin-left: 5px;
 }
 
 .order-body-detail {
@@ -181,7 +188,7 @@ nav a:hover {
 }
 
 .order-body-main {
-  width: 70%;
+  width: 65%;
   background-color: #fff;
   padding: 40px;
   border-radius: 8px;
@@ -203,22 +210,29 @@ nav a:hover {
   flex-direction: column;
 }
 
-.order-information div p:first-child{
+.order-information div p:first-child {
   width: 20%;
 }
 
-.order-information div p:last-child{
+.order-information div p:last-child {
   width: 80%;
   font-weight: 400;
   font-size: 16px;
-  color: #0F172A;
+  color: #0f172a;
 }
 
-.order-information .order-information-service p:last-child{
+.order-information .order-information-service a {
   font-weight: 600;
   font-size: 16px;
-  color: #0F172A;
+  color: #1D92FF;
   text-transform: uppercase;
+  cursor: pointer;
+  width: 80%;
+}
+
+.order-information-user a i{
+    color: #1D92FF;
+    cursor: pointer;
 }
 
 .order-information-title {
@@ -226,7 +240,7 @@ nav a:hover {
   width: 20%;
 }
 
-.order-information-content{
+.order-information-content {
   width: 80%;
 }
 
@@ -258,7 +272,7 @@ nav a:hover {
   width: 50%;
 }
 
-.order-payment button{
+.order-payment button {
   margin: 10px 0px;
 }
 
@@ -285,83 +299,46 @@ nav a:hover {
   font-size: 16px;
 }
 
-.order-table-history-payment {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #edf2f7;
-}
-
-.order-bill{
-  padding: 10px 0px;
-  border-bottom: 1px solid #EDF2F7;
-}
-
-.order-bill-empty {
-  width: 50%;
-}
-
-.order-bill-content {
-  width: 50%;
-}
-
-.order-bill-content div {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #edf2f7;
-}
-
-.order-bill-content div:last-child{
-  border-bottom: none;
-
-}
-
-.order-bill-content div p:first-child {
-  color: #64748b;
-}
-
-.order-body-bill-provisional p:last-child,
-.order-body-bill-vat p:last-child {
-  font-weight: 600;
-  font-size: 16px;
-  color: #0f172a;
-}
-
-.order-body-bill-pay p:last-child{
-  font-weight: 700;
-  font-size: 16px;
-  color: #D32030;
-}
+.order-bill {
+    width: 30%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    height: fit-content;
+  }
+  
+  .order-bill h6 {
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .order-bill div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .order-bill div p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .discount-label {
+    color: #1d92ff;
+  }
+  
+  .order-bill div .payment-label {
+    font-weight: 600;
+  }
+  
+  .order-bill div .payment-amount {
+    color: #1d92ff;
+    font-size: 16px;
+    font-weight: 600;
+  }
 
 /* .order-group-list{
-  padding: 10px 0px;
-} */
-
-.order-group-list h6 span{
-  font-weight: 400;
-  font-size: 14px;
-  color: #10A35E;
-}
-
-.order-group-list-header{
-  display: flex;
-  justify-content: space-between;
-}
-
-.order-group-list-header button{
-  border: none;
-  background-color: #EDF2F7;
-  padding: 4px 12px;
-  border-radius: 8px;
-  margin: 10px 0px;
-  vertical-align: middle;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.order-group-list-header button i{
-  margin-left: 5px;
-}
+    padding: 10px 0px;
+  } */
 
 .order-payment-information p {
   margin-bottom: 5px;
@@ -409,8 +386,8 @@ nav a:hover {
   height: fit-content;
 }
 
-.order-contact-history div:first-child{
-  margin-bottom: 20px
+.order-contact-history div:first-child {
+  margin-bottom: 20px;
 }
 
 .order-contact-history h6 {
@@ -418,15 +395,29 @@ nav a:hover {
   font-weight: 600;
 }
 
-.order-contact-history p{
+.order-contact-history p {
   margin-bottom: 5px;
 }
 
-.order-contact-history p:first-child{
-  color: #64748B;
+.order-contact-history p:first-child {
+  color: #64748b;
 }
 
-.modal-body input, .modal-body textarea{
+.order-body-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .order-body-item {
+    width: 49%;
+    color: #64748b;
+  }
+
+.modal-body input,
+.modal-body select,
+.modal-body textarea {
   margin-bottom: 15px;
 }
 
@@ -452,16 +443,16 @@ textarea {
   transition: 0.15s all;
 }
 
-.order-contact-note-box{
+.order-contact-note-box {
   display: flex;
   justify-content: space-between;
 }
 
-.order-contact-note-box div{
-  width: 48%
+.order-contact-note-box div {
+  width: 48%;
 }
 
-.modal-add-group-list-added{
+.modal-add-group-list-added {
   text-align: right;
   width: 100%;
   font-size: 14px;
@@ -469,22 +460,21 @@ textarea {
   color: #333333;
 }
 
-table{
+table {
   border-radius: 4px;
   overflow: hidden;
 }
 
-.modal-add-group-list .form-control{
-  padding: .375rem .75rem;
+.modal-add-group-list .form-control {
+  padding: 0.375rem 0.75rem;
   margin-bottom: 0;
 }
 
-.modal-add-group-list th{
+.modal-add-group-list th {
   padding: 20px 16px;
-  
 }
 
-.modal-add-group-list td{
+.modal-add-group-list td {
   padding: 10px 16px;
   vertical-align: middle;
 }

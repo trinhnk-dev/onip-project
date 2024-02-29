@@ -46,7 +46,7 @@
           </a>
           <div class="collapse" id="businessCollapse">
             <a href="./sellingTour.html"><p>Tour đang bán</p></a>
-            <a href="./order.html" class="sub-nav-active"><p>Đơn hàng</p></a>
+            <a href="./orderDetail.html" class="sub-nav-active"><p>Đơn hàng</p></a>
           </div>
           <a
             class="nav-row"
@@ -100,7 +100,7 @@
           </section>
         </nav>
       </aside>
-      <section class="order-detail-content">
+      <section class="order-content">
         <header class="d-flex justify-content-between mb-4 mt-3">
           <h3>Đơn hàng</h3>
           <div
@@ -116,27 +116,27 @@
           </div>
         </header>
         <section class="d-flex justify-content-between align-items-center mb-4">
-          <div class="order-detail-title">
+          <div class="order-title">
             <a href="./sellingTour.html"
               ><i class="fa-solid fa-chevron-left"></i
             ></a>
-            <span class="order-detail-name">Đơn hàng</span>
-            <span class="order-detail-id">#TQ123467XD</span>
-            <button class="order-detail-in-progress">Đang xử lí</button>
+            <span class="order-name">Đơn hàng</span>
+            <span class="order-id">#TQ123467XD</span>
+            <button class="order-in-progress">Đang xử lí</button>
           </div>
-          <div class="order-detail-title-btn">
+          <div class="order-title-btn">
             <button class="btn btn-outline-danger btn-cancel-order">
               Hủy Đơn
             </button>
             <button class="btn btn-outline-warning btn-edit-order">
-              Chỉnh Sửa
+              <a href="./editOrder.html">Chỉnh Sửa</a>
             </button>
             <button class="btn btn-primary btn-transaction-success">
               Chuyển Thành Công
             </button>
           </div>
         </section>
-        <section class="order-detail-button-option">
+        <section class="order-button-option">
           <button>In đơn hàng <i class="fa-solid fa-chevron-down"></i></button>
           <button
             type="button"
@@ -161,38 +161,38 @@
             Thêm lịch nhắc
           </button>
         </section>
-        <section class="order-detail-body-detail">
-          <section class="order-detail-body-main">
+        <section class="order-body-detail">
+          <section class="order-body-main">
             <h6>Thông tin người đặt</h6>
-            <section class="order-detail-information">
-              <div class="order-detail-information-service d-flex">
+            <section class="order-information">
+              <div class="order-information-service d-flex">
                 <p>Dịch vụ</p>
                 <p>
                   Tour trung quốc 7N6Đ thượng hải - hàng châu - tô châu - bắc
                   kinh
                 </p>
               </div>
-              <div class="order-detail-information-user d-flex">
+              <div class="order-information-user d-flex">
                 <p>Người đặt</p>
                 <p>[Chị] Phan Thị Mi Mai</p>
               </div>
-              <div class="order-detail-information-phone d-flex">
+              <div class="order-information-phone d-flex">
                 <p>Số điện thoại</p>
                 <p>0943-345-679</p>
               </div>
-              <div class="order-detail-information-email d-flex">
+              <div class="order-information-email d-flex">
                 <p>Email:</p>
                 <p>--</p>
               </div>
-              <div class="order-detail-information-note d-flex">
+              <div class="order-information-note d-flex">
                 <p>Ghi chú đơn hàng</p>
                 <p>--</p>
               </div>
             </section>
-            <h6 class="order-detail-title">Thông tin thanh toán</h6>
-            <section class="order-detail-payment">
-              <div class="order-detail-payment-information">
-                <div class="total-ammount">
+            <h6 class="order-title">Thông tin thanh toán</h6>
+            <section class="order-payment">
+              <div class="order-payment-information">
+                <div class="total-amount">
                   <p>Tổng tiền</p>
                   <p>20,000,000</p>
                 </div>
@@ -207,8 +207,8 @@
               </div>
               <button class="btn btn-primary">Thanh toán</button>
             </section>
-            <section class="order-detail-table-history-payment">
-              <h6 class="order-detail-title">Lịch Sử Thanh Toán</h6>
+            <section class="order-table-history-payment">
+              <h6 class="order-title">Lịch Sử Thanh Toán</h6>
               <table class="table">
                 <thead class="table-light">
                   <tr>
@@ -230,8 +230,8 @@
                 </tbody>
               </table>
             </section>
-            <section class="order-detail-table-information">
-              <h6 class="order-detail-title">Chi tiết đơn hàng</h6>
+            <section class="order-table-information">
+              <h6 class="order-title">Chi tiết đơn hàng</h6>
               <table class="table">
                 <thead class="table-light">
                   <tr>
@@ -263,30 +263,30 @@
                 </tbody>
               </table>
             </section>
-            <section class="order-detail-bill d-flex">
-              <div class="order-detail-bill-empty"></div>
-              <div class="order-detail-bill-content">
-                <div class="order-detail-body-bill-provisional">
+            <section class="order-bill d-flex">
+              <div class="order-bill-empty"></div>
+              <div class="order-bill-content">
+                <div class="order-body-bill-provisional">
                   <p>Thành tiền</p>
                   <p>20,000,000</p>
                 </div>
-                <div class="order-detail-body-bill-vat">
+                <div class="order-body-bill-vat">
                   <p>VAT</p>
                   <p>0</p>
                 </div>
-                <div class="order-detail-body-bill-discount">
+                <div class="order-body-bill-discount">
                   <p>Chiết khấu</p>
                   <p>0</p>
                 </div>
-                <div class="order-detail-body-bill-pay">
+                <div class="order-body-bill-pay">
                   <p>Thanh toán<h6</p>
                   <p>20,000,000</p>
                 </div>
               </div>
             </section>
-            <section class="order-detail-group-list">
-              <div class="order-detail-group-list-header">
-                <h6 class="order-detail-title">
+            <section class="order-group-list">
+              <div class="order-group-list-header">
+                <h6 class="order-title">
                   Chi tiết đoàn <span>(4/4 người có thông tin)</span>
                 </h6>
                 <button
@@ -356,7 +356,7 @@
               </table>
             </section>
           </section>
-          <section class="order-detail-contact-history">
+          <section class="order-contact-history">
             <h6>Lịch sử liên hệ</h6>
             <div class="mb-4">
               <p>Lần 1 16/11/2023 14:55</p>
@@ -455,15 +455,15 @@
                   ></button>
                 </div>
                 <div class="modal-body">
-                  <div class="order-detail-contact-note-box">
-                    <div class="order-detail-contact-note-item">
+                  <div class="order-contact-note-box">
+                    <div class="order-contact-note-item">
                       <label class="form-label"
                         >Thời gian <span style="color: red">*</span></label
                       >
                       <input type="text" class="form-control" />
                     </div>
 
-                    <div class="order-detail-contact-note-item">
+                    <div class="order-contact-note-item">
                       <label class="form-label">Kênh trao đổi</label>
                       <select
                         class="form-select"
