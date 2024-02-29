@@ -17,7 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./style/orderDetail.css" />
-    <title>Order</title>
+    <title>Chi tiết đơn</title>
   </head>
   <body>
     <main>
@@ -138,10 +138,10 @@
         </section>
         <section class="order-detail-button-option">
           <button>In đơn hàng <i class="fa-solid fa-chevron-down"></i></button>
-          <button>Gửi Email <i class="fa-solid fa-chevron-down"></i></button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#sendEmail">Gửi Email <i class="fa-solid fa-chevron-down"></i></button>
           <button>Gửi Zalo <i class="fa-solid fa-chevron-down"></i></button>
-          <button>Note liên hệ</button>
-          <button>Thêm lịch nhắc</button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#contactNote">Note liên hệ</button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#remindCalendar">Thêm lịch nhắc</button>
         </section>
         <section class="order-detail-body-detail">
           <section class="order-detail-body-main">
@@ -267,7 +267,7 @@
             <section class="order-detail-group-list">
               <div class="order-detail-group-list-header">
                 <h6 class="order-detail-title">
-                  Chi tiết đơn hàng <span>(4/4 người có thông tin)</span>
+                  Chi tiết đoàn <span>(4/4 người có thông tin)</span>
                 </h6>
                 <button class="btn btn-outline-primary">
                   Thêm <i class="fa-solid fa-circle-plus"></i>
@@ -342,9 +342,10 @@
               <p>[Email] Gửi chi tiết lịch trình</p>
             </div>
           </section>
+          <!-- Các modal -->
           <div
-            class="modal fade"
-            id="createReceiveBill"
+            class="modal fade modal-send-email"
+            id="sendEmail"
             data-bs-keyboard="false"
             tabindex="-1"
             aria-labelledby="staticBackdropLabel"
@@ -354,7 +355,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                    Tạo phiếu thu
+                    Gửi Email Đến Khách Hàng
                   </h1>
                   <button
                     type="button"
@@ -363,37 +364,27 @@
                     aria-label="Close"
                   ></button>
                 </div>
-                <div class="modal-body create-receive-bill-modal">
-                  <div class="order-detail-body-box">
-                    <div class="order-detail-body-item">
+                <div class="modal-body">
                       <label class="form-label"
-                        >Số tiền nộp<span style="color: red">*</span></label
+                        >Tiêu đề <span style="color: red">*</span></label
                       >
                       <input type="text" class="form-control" />
-                    </div>
 
-                    <div class="order-detail-body-item">
                       <label class="form-label"
-                        >Nguồn thu<span style="color: red">*</span></label
+                        >Người nhận <span style="color: red">*</span></label
                       >
                       <input type="text" class="form-control" />
-                    </div>
-                  </div>
                   <div>
                     <label class="form-label"
-                      >Số tiền nộp<span style="color: red">*</span></label
+                      >Tệp đính kèm</label
                     >
-                    <textarea
-                      class="form-control"
-                      rows="3"
-                      placeholder="Nhập nội dung"
-                    ></textarea>
+                    <input type="upload" class="form-control" placeholder="Upload"/>
                   </div>
                   <div>
-                    <label class="form-label">Ghi chú</label>
+                    <label class="form-label">Nội dung <span style="color: red">*</span></label>
                     <textarea
                       class="form-control"
-                      rows="3"
+                      rows="10"
                       placeholder="Nhập nội dung"
                     ></textarea>
                   </div>
@@ -407,7 +398,128 @@
                     Hủy
                   </button>
                   <button type="button" class="btn btn-primary">
-                    Tạo phiếu thu
+                    Gửi Email
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade modal-contact-note"
+            id="contactNote"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    Note Liên Hệ
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="order-detail-contact-note-box">
+                    <div class="order-detail-contact-note-item">
+                      <label class="form-label"
+                        >Thời gian <span style="color: red">*</span></label
+                      >
+                      <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="order-detail-contact-note-item">
+                      <label class="form-label"
+                        >Kênh trao đổi</label
+                      >
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Gọi điện</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="form-label"
+                      >Nội dung chăm sóc <span style="color: red">*</span></label
+                    >
+                    <textarea
+                      class="form-control"
+                      rows="2"
+                      placeholder="Nhập nội dung"
+                    ></textarea>
+                  </div>
+                  <label class="form-label"
+                        >Tệp đính kèm</label
+                      >
+                      <input type="text" class="form-control" placeholder="Dán liên kết"/>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-cancel-modal"
+                    data-bs-dismiss="modal"
+                  >
+                    Hủy
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Thêm
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade modal-remind-calendar"
+            id="remindCalendar"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    Lịch Nhắc
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <label class="form-label"
+                        >Thời gian <span style="color: red">*</span></label
+                      >
+                      <input type="text" class="form-control" />
+                      <label class="form-label"
+                      >Nội dung <span style="color: red">*</span></label
+                    >
+                    <textarea
+                      class="form-control"
+                      rows="2"
+                      placeholder="Nhập nội dung"
+                    ></textarea>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-cancel-modal"
+                    data-bs-dismiss="modal"
+                  >
+                    Hủy
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Thêm
                   </button>
                 </div>
               </div>
