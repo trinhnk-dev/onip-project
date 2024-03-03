@@ -65,3 +65,65 @@ nav a:hover {
   margin-left: 18%;
   margin-right: 3%;
 }
+
+.customer-button-option button {
+  background-color: #334155;
+  padding: 4px 12px;
+  border-radius: 32px;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.customer-detail-table {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.customer-detail {
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.customer-detail tr {
+  padding: 8px 0px;
+}
+
+.customer-detail th {
+  padding: 20px 16px;
+}
+
+.customer-detail th:first-child input{
+  margin-right: 10px;
+}
+
+.customer-detail td {
+  padding: 10px 0px 10px 16px;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.customer-detail td:first-child input{
+  margin-right: 10px;
+}
+
+.customer-detail-id{
+  font-size: 16px !important;
+  font-weight: 400;
+  color: #1890FF !important
+}
+
+.customer-detail-revenue{
+  color: #10A35E !important;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.form-control{
+  padding: 10px 16px;
+}
+
+.modal-body input{
+  margin-bottom: 15px;
+}
