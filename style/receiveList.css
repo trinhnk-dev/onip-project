@@ -38,7 +38,12 @@ aside {
 
 .nav-row i {
   width: 20%;
-  color: #64748B;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.nav-item i{
+  font-size: 18px;
 }
 
 nav section span {
@@ -46,22 +51,432 @@ nav section span {
 }
 
 nav a {
-  color: #64748B;
+  color: #64748b;
   text-decoration: none;
 }
 
 nav a:hover {
-  color: #0F172A;
+  color: #0f172a;
   text-decoration: none;
 }
 
-.nav-item-active{
-    color: #0F172A;
-    font-weight: 500;
+.nav-item-active {
+  color: #0f172a;
+  font-weight: 500;
 }
 
-.home-content {
+.header-right{
+  width: 20%;
+}
+
+.avatar{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+}
+
+.receive-content {
   width: 85%;
   margin-left: 18%;
   margin-right: 3%;
+}
+
+.tour-filter {
+  display: flex;
+}
+
+.tour-filter .tour-filter-item {
+  width: 20%;
+  margin-right: 5px;
+}
+
+.tour-filter .tour-filter-item label{
+  color: #94A3B8;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* .tour-filter .tour-filter-item option{
+  font-weight: 500;
+  font-size: 14px;
+} */
+
+.receive-add-order button i{
+  margin-left: 5px;
+}
+
+.receive-detail-table {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.receive-detail {
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.receive-detail tr {
+  padding: 8px 0px;
+}
+
+.receive-detail th {
+  padding: 20px 16px;
+}
+
+.receive-detail td {
+  padding: 10px 0px 10px 16px;
+  vertical-align: middle;
+}
+
+.receive-detail p {
+  margin: 0;
+}
+
+.receive-detail-id a{
+  color: #1890ff !important;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+
+.receive-detail-id a:hover{
+  opacity: 0.75;
+  transition: 0.3s all;
+}
+
+.receive-detail-information {
+  width: 30%;
+}
+
+.receive-detail-money{
+  color: #D32030 !important;
+}
+
+.receive-detail-id-tour{
+  color: #1D92FF !important;
+}
+
+.receive-detail-status-unpaid button {
+  background-color: #FFF9E3;
+  color: #D4962A;
+  border: transparent;
+  padding: 4px 16px 4px 16px;
+  border-radius: 200px;
+}
+
+.receive-detail-status-paid button {
+  background-color: #F0FFF4;
+  color: #10A35E;
+  border: transparent;
+  padding: 4px 16px 4px 16px;
+  border-radius: 200px;
+}
+
+.receive-detail-status-cancel button {
+  background-color: #FFE1E7;
+  color: #C21F27;
+  border: transparent;
+  padding: 4px 16px 4px 16px;
+  border-radius: 200px;
+}
+
+.receive-detail-status-full {
+  text-align: center;
+}
+
+.receive-detail-status-full button {
+  background-color: #eff5ff;
+  color: #1890ff;
+  border: transparent;
+  padding: 4px 12px 4px 12px;
+  border-radius: 200px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 14px;
+}
+
+.receive-detail-action a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.receive-detail-action-disable button {
+  background-color: #cbd5e1;
+  padding: 4px 12px 4px 12px;
+  border: transparent;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.receive-order-body-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.create-receive-bill-modal p{
+  font-size: 14px;
+  font-weight: 400;
+  color: #94A3B8;
+}
+
+.receive-order-body-item {
+  width: 48%;
+  color: #64748b;
+}
+
+.create-receive-bill-modal label{
+  font-weight: 400;
+  font-size: 16px;
+  color: #94A3B8;
+}
+
+.form-control, .form-select {
+  padding: 10px 16px;
+}
+
+.modal-body input, .modal-body textarea{
+  margin-bottom: 15px;
+}* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f6f9;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  width: 15%;
+  overflow: auto;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  padding-left: 20px;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.nav-item {
+  width: 90%;
+}
+
+.nav-row i {
+  width: 20%;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.nav-item i{
+  font-size: 18px;
+}
+
+nav section span {
+  width: 70%;
+}
+
+nav a {
+  color: #64748b;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.nav-item-active {
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.header-right{
+  width: 20%;
+}
+
+.avatar{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+}
+
+.receive-content {
+  width: 85%;
+  margin-left: 18%;
+  margin-right: 3%;
+}
+
+.tour-filter {
+  display: flex;
+}
+
+.tour-filter .tour-filter-item {
+  width: 20%;
+  margin-right: 5px;
+}
+
+.tour-filter .tour-filter-item label{
+  color: #94A3B8;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* .tour-filter .tour-filter-item option{
+  font-weight: 500;
+  font-size: 14px;
+} */
+
+.receive-add-order button i{
+  margin-left: 5px;
+}
+
+.receive-detail-table {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.receive-detail {
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.receive-detail tr {
+  padding: 8px 0px;
+}
+
+.receive-detail th {
+  padding: 20px 16px;
+}
+
+.receive-detail td {
+  padding: 10px 0px 10px 16px;
+  vertical-align: middle;
+}
+
+.receive-detail p {
+  margin: 0;
+}
+
+.receive-detail-id a{
+  color: #1890ff !important;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+
+.receive-detail-id a:hover{
+  opacity: 0.75;
+  transition: 0.3s all;
+}
+
+.receive-detail-information {
+  width: 30%;
+}
+
+.receive-detail-money{
+  color: #0B9D23 !important;
+}
+
+.receive-detail-id-tour{
+  color: #1D92FF !important;
+}
+
+.receive-detail-status button {
+  background-color: #F5FAFF;
+  color: #1890FF;
+  border: transparent;
+  padding: 4px 16px 4px 16px;
+  border-radius: 200px;
+}
+
+.receive-detail-status-full {
+  text-align: center;
+}
+
+.receive-detail-status-full button {
+  background-color: #eff5ff;
+  color: #1890ff;
+  border: transparent;
+  padding: 4px 12px 4px 12px;
+  border-radius: 200px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 14px;
+}
+
+.receive-detail-action a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.receive-detail-action-disable button {
+  background-color: #cbd5e1;
+  padding: 4px 12px 4px 12px;
+  border: transparent;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.receive-order-body-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.create-receive-bill-modal p{
+  font-size: 14px;
+  font-weight: 400;
+  color: #94A3B8;
+}
+
+.receive-order-body-item {
+  width: 48%;
+  color: #64748b;
+}
+
+.create-receive-bill-modal label{
+  font-weight: 400;
+  font-size: 16px;
+  color: #94A3B8;
+}
+
+.form-control, .form-select {
+  padding: 10px 16px;
+}
+
+.modal-body input, .modal-body textarea{
+  margin-bottom: 15px;
+}
+
+.modal-content {
+  --bs-modal-header-border-color: none;
+  --bs-modal-footer-border-color: none;
 }

@@ -245,3 +245,8 @@ nav a:hover {
 .modal-body input, .modal-body textarea{
   margin-bottom: 15px;
 }
+
+.modal-content {
+  --bs-modal-header-border-color: none;
+  --bs-modal-footer-border-color: none;
+}
