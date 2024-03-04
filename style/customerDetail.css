@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f6f9;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  width: 15%;
+  overflow: auto;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  padding-left: 20px;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.nav-item {
+  width: 90%;
+}
+
+.nav-row i {
+  width: 20%;
+  color: #64748b;
+}
+
+nav section span {
+  width: 70%;
+}
+
+nav a {
+  color: #64748b;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.nav-item-active {
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.header-right {
+  width: 20%;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+}
+
+.customer-detail-content {
+  width: 85%;
+  margin-left: 18%;
+  margin-right: 3%;
+}
+
+.customer-detail-title a {
+  margin-right: 5px;
+  color: #767676;
+}
+
+.customer-detail-title a:hover {
+  color: #767676;
+  opacity: 0.75;
+}
+
+.btn-delete-customer {
+  border: none;
+  background-color: #fff;
+}
+
+.customer-detail-body-detail {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.customer-detail-body-main {
+  width: 65%;
+}
+
+.customer-detail-information {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 8px;
+}
+
+.customer-detail-information div p:first-child {
+  width: 20%;
+  color: #64748b;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.customer-detail-information div p:last-child {
+  width: 80%;
+  font-weight: 400;
+  font-size: 16px;
+  color: #0f172a;
+}
+
+.customer-detail-information .customer-detail-information-name p:last-child {
+  font-weight: 600;
+  font-size: 16px;
+  color: #0f172a;
+  text-transform: uppercase;
+}
+
+.customer-detail-information-title {
+  color: #64748b;
+  width: 20%;
+}
+
+.customer-detail-information-content {
+  width: 80%;
+}
+
+.customer-detail-information-content h6 {
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.customer-detail-information-content p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #0f172a;
+}
+
+.customer-detail-information-phone a,
+.customer-detail-information-email a,
+.customer-detail-information-note a {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1d92ff;
+  cursor: pointer;
+  width: 80%;
+}
+
+.customer-detail-information i {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1d92ff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.nav-pills button {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.nav-pills .nav-link.active {
+  padding: 6px 16px 6px 16px;
+  background-color: transparent;
+  border: 1px solid #f5f5f5;
+  color: #007bff;
+  border-radius: 32px;
+  margin-bottom: 15px;
+}
+
+.nav-pills .nav-link {
+  padding: 6px 16px 6px 16px;
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  border-radius: 32px;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.customer-detail-service {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 8px;
+}
+
+.customer-detail-remind-schedule {
+  padding: 20px 0px;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.customer-detail-remind-schedule div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer-detail-remind-schedule div input {
+  margin-right: 5px;
+}
+
+.customer-detail-remind-schedule div p:last-child {
+  color: #d32030;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.customer-detail-service-history h6 button {
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #edf6ff;
+  border: none;
+  color: #1d92ff;
+  margin-left: 10px;
+}
+
+.customer-detail-service-history h6 button i {
+  margin-right: 10px;
+}
+
+.customer-detail-contact-history{
+  padding: 20px 0px;
+}
+
+.customer-detail-contact-history div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer-detail-contact-history div p:first-child{
+  font-weight: 400;
+  font-size: 16px;
+  color: #0F172A;
+}
+
+.customer-detail-contact-history div p:first-child a{
+  font-weight: 400;
+  font-size: 18px;
+  color: #1D92FF;
+  letter-spacing: -1.5%;
+  text-decoration: none;
+}
+
+.customer-detail-contact-history div p:first-child a i {
+  color: red;
+  margin-right: 5px;
+}
+
+.customer-detail-contact-history div p:last-child{
+  font-weight: 400;
+  font-size: 16px;
+  color: #64748B;
+}
+
+.customer-detail-service-history h6 span{
+  font-size: 16px;
+  font-weight: 600;
+  color: #1D92FF;
+}
+
+.customer-detail-body-bill{
+  width: 30%;
+}
+
+.customer-detail-bill-history{
+  padding: 24px;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.total-order p:first-child, .total-revenue p:first-child, .total-debt :first-child{
+  font-size: 16px;
+  font-weight: 400;
+  color: #64748B;
+}
+
+.total-order p:last-child{
+  font-size: 16px;
+  font-weight: 600;
+  color: #0F172A;
+}
+
+.total-revenue p:last-child{
+  font-size: 16px;
+  font-weight: 600;
+  color: #1D92FF;
+}
+.total-debt p:last-child{
+  font-size: 16px;
+  font-weight: 600;
+  color: #D32030;
+}
+
+.customer-detail-bill-care{
+  padding: 24px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.total-contact p:first-child, .nearest-contact p:first-child, .responsibility-contact p:first-child{
+  font-size: 16px;
+  font-weight: 400;
+  color: #64748B;
+}
+
+.total-contact p:last-child{
+  font-weight: 600;
+  font-size: 16px;
+  color: #0F172A;
+}
+
+.responsibility-contact i{
+  color: #1D92FF;
+  margin-left: 10px;
+}

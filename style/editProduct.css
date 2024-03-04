@@ -93,7 +93,13 @@ nav a:hover {
   width: 24%;
 }
 
-.nav-pills li {
+.nav-pills{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.nav-pills button {
   margin-top: 10px;
   margin-right: 10px;
 }
