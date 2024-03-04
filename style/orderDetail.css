@@ -192,6 +192,10 @@ nav a:hover {
   font-weight: 600;
 }
 
+.modal-content label{
+  color: #94A3B8;
+}
+
 .form-control, .form-select {
   padding: 10px 16px;
 }

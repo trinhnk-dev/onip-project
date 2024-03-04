@@ -415,6 +415,10 @@ nav a:hover {
     color: #64748b;
   }
 
+  .modal-body input, .modal-body textarea{
+    margin-bottom: 15px;
+  }
+
 .modal-body input,
 .modal-body select,
 .modal-body textarea {
@@ -424,6 +428,10 @@ nav a:hover {
 .modal-content {
   --bs-modal-header-border-color: none;
   --bs-modal-footer-border-color: none;
+}
+
+.modal-content label{
+  color: #94A3B8;
 }
 
 .create-receive-bill-modal input,
