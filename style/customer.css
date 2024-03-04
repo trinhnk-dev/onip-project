@@ -129,7 +129,13 @@ nav a:hover {
 .customer-detail-id a{
   font-size: 16px !important;
   font-weight: 400;
-  color: #1890FF !important
+  color: #1890FF !important;
+  transition: 0.3s all;
+}
+
+.customer-detail-id a:hover{
+  opacity: 0.75;
+  transition: 0.3s all;
 }
 
 .customer-detail-revenue{

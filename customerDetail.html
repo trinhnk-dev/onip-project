@@ -126,7 +126,13 @@
             <button class="btn btn-outline-danger btn-delete-customer">
               Xóa Khách Hàng
             </button>
-            <button class="btn btn-primary">Chỉnh Sửa</button>
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#updateInformation"
+            >
+              Chỉnh Sửa
+            </button>
           </div>
         </section>
         <section class="customer-detail-body-detail">
@@ -244,39 +250,47 @@
                       <p>1/12/2023</p>
                     </div>
                   </div>
-                  <h6 class="mt-4">
-                    Lịch sử liên hệ <span>(4)</span>
-                  </h6>
+                  <h6 class="mt-4">Lịch sử liên hệ <span>(4)</span></h6>
                   <div class="customer-detail-contact-history">
                     <div>
-                      <p>
-                        [Zalo] Giới thiệu ưu đãi cuối năm
-                      </p>
+                      <p>[Zalo] Giới thiệu ưu đãi cuối năm</p>
                       <p>29/11/2023 14:45</p>
                     </div>
                     <div>
                       <p>
-                        [Email] Giới thiệu Ưu đãi khách hàng thân thiết. <br>
-                        <a href="./customerDetail.html"><i class="fa-regular fa-file-pdf"></i>VIP club-Season’s Greetings articles-dec-#?x.pdf</a>
+                        [Email] Giới thiệu Ưu đãi khách hàng thân thiết. <br />
+                        <a href="./customerDetail.html"
+                          ><i class="fa-regular fa-file-pdf"></i>VIP
+                          club-Season’s Greetings articles-dec-#?x.pdf</a
+                        >
                       </p>
                       <p>27/11/2023 13:00</p>
                     </div>
                     <div>
                       <p>
-                        [Email] Giới thiệu Ưu đãi khách hàng thân thiết. <br>
-                        <a href="./customerDetail.html"><i class="fa-regular fa-file-pdf"></i>VIP club-Season’s Greetings articles-dec-#?x.pdf</a>
+                        [Email] Giới thiệu Ưu đãi khách hàng thân thiết. <br />
+                        <a href="./customerDetail.html"
+                          ><i class="fa-regular fa-file-pdf"></i>VIP
+                          club-Season’s Greetings articles-dec-#?x.pdf</a
+                        >
                       </p>
                       <p>25/11/2023 14:30</p>
                     </div>
                     <div>
                       <p>
-                        [Meet] Giới thiệu Ưu đãi khách hàng thân thiết. <br>
-                        <a href="./customerDetail.html"><i class="fa-regular fa-file-pdf"></i>VIP club-Season’s Greetings articles-dec-#?x.pdf</a> <br>
-                        <a href="./customerDetail.html"><i class="fa-solid fa-link"></i>https://google.com/demomeet-link-url</a>
+                        [Meet] Giới thiệu Ưu đãi khách hàng thân thiết. <br />
+                        <a href="./customerDetail.html"
+                          ><i class="fa-regular fa-file-pdf"></i>VIP
+                          club-Season’s Greetings articles-dec-#?x.pdf</a
+                        >
+                        <br />
+                        <a href="./customerDetail.html"
+                          ><i class="fa-solid fa-link"></i
+                          >https://google.com/demomeet-link-url</a
+                        >
                       </p>
                       <p>20/11/2023 14:30</p>
                     </div>
-                    
                   </div>
                 </div>
               </div>
@@ -284,44 +298,42 @@
           </section>
           <section class="customer-detail-body-bill">
             <div class="customer-detail-bill-history">
-              <h6 class="mb-3">
-                Lịch sử liên hệ 
-              </h6>
+              <h6 class="mb-3">Lịch sử liên hệ</h6>
               <div class="total-order d-flex justify-content-between">
-                <p>Tổng đơn: </p>
+                <p>Tổng đơn:</p>
                 <p>2</p>
               </div>
               <div class="total-revenue d-flex justify-content-between">
-                <p>Doanh thu </p>
+                <p>Doanh thu</p>
                 <p>124,000,000</p>
               </div>
               <div class="total-debt d-flex justify-content-between">
-                <p>Công nợ </p>
+                <p>Công nợ</p>
                 <p>100,000,000</p>
               </div>
             </div>
             <div class="customer-detail-bill-care">
-              <h6 class="mb-3">
-                Chăm sóc khách hàng
-              </h6>
+              <h6 class="mb-3">Chăm sóc khách hàng</h6>
               <div class="total-contact d-flex justify-content-between">
-                <p>Số lần liên hệ </p>
+                <p>Số lần liên hệ</p>
                 <p>4</p>
               </div>
               <div class="nearest-contact d-flex justify-content-between">
-                <p>Liên hệ gần nhất </p>
+                <p>Liên hệ gần nhất</p>
                 <p>16/11/2023</p>
               </div>
-              <div class="responsibility-contact d-flex justify-content-between">
-                <p>Phụ trách </p>
+              <div
+                class="responsibility-contact d-flex justify-content-between"
+              >
+                <p>Phụ trách</p>
                 <p>Phạm Nhật <i class="fa-regular fa-pen-to-square"></i></p>
               </div>
             </div>
           </section>
           <!-- Các modal -->
           <div
-            class="modal fade modal-send-email"
-            id="sendEmail"
+            class="modal fade"
+            id="updateInformation"
             data-bs-keyboard="false"
             tabindex="-1"
             aria-labelledby="staticBackdropLabel"
@@ -342,32 +354,14 @@
                 </div>
                 <div class="modal-body">
                   <label class="form-label"
-                    >Tiêu đề <span style="color: red">*</span></label
+                    >Số điện thoại</label
                   >
-                  <input type="text" class="form-control" />
+                  <input type="text" class="form-control" placeholder="Nhập số điện thoại"/>
 
                   <label class="form-label"
-                    >Người nhận <span style="color: red">*</span></label
+                    >Email</label
                   >
-                  <input type="text" class="form-control" />
-                  <div>
-                    <label class="form-label">Tệp đính kèm</label>
-                    <input
-                      type="upload"
-                      class="form-control"
-                      placeholder="Upload"
-                    />
-                  </div>
-                  <div>
-                    <label class="form-label"
-                      >Nội dung <span style="color: red">*</span></label
-                    >
-                    <textarea
-                      class="form-control"
-                      rows="10"
-                      placeholder="Nhập nội dung"
-                    ></textarea>
-                  </div>
+                  <input type="text" class="form-control" placeholder="Nhập email"/>
                 </div>
                 <div class="modal-footer">
                   <button
@@ -375,88 +369,16 @@
                     class="btn btn-cancel-modal"
                     data-bs-dismiss="modal"
                   >
-                    Hủy
+                    Hủy Bỏ
                   </button>
                   <button type="button" class="btn btn-primary">
-                    Gửi Email
+                    Lưu Lại
                   </button>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <!-- modal -->
-        <div
-          class="modal fade modal-send-email"
-          id="sendEmail"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                  Gửi Email Đến Khách Hàng
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <label class="form-label"
-                  >Tiêu đề <span style="color: red">*</span></label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Nhập tiêu đề"
-                />
-
-                <label class="form-label"
-                  >Người nhận <span style="color: red">*</span></label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Người nhận"
-                />
-                <div>
-                  <label class="form-label">Tệp đính kèm</label>
-                  <input
-                    type="upload"
-                    class="form-control"
-                    placeholder="Upload"
-                  />
-                </div>
-                <div>
-                  <label class="form-label"
-                    >Nội dung <span style="color: red">*</span></label
-                  >
-                  <textarea
-                    class="form-control"
-                    rows="10"
-                    placeholder="Nhập nội dung"
-                  ></textarea>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-cancel-modal"
-                  data-bs-dismiss="modal"
-                >
-                  Hủy
-                </button>
-                <button type="button" class="btn btn-primary">Gửi Email</button>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
     </main>
     <script
