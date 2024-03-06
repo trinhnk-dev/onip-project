@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f5f6f9;
+  }
+  
+  main {
+    display: flex;
+  }
+  
+  aside {
+    width: 15%;
+    overflow: auto;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding-left: 20px;
+  }
+  
+  .nav-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .nav-item {
+    width: 90%;
+  }
+  
+  .nav-row i {
+    width: 20%;
+    color: #64748b;
+    font-size: 12px;
+  }
+  
+  .nav-item i {
+    font-size: 18px;
+  }
+  
+  nav section span {
+    width: 70%;
+  }
+  
+  nav a {
+    color: #64748b;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #0f172a;
+    text-decoration: none;
+  }
+  
+  .nav-item-active {
+    color: #0f172a;
+    font-weight: 500;
+  }
+  
+  .header-right {
+    width: 20%;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+  }
+  
+  .manage-account-detail-content {
+    width: 85%;
+    margin-left: 18%;
+    margin-right: 3%;
+  }
+  
+  .manage-account-detail-title {
+    vertical-align: middle;
+  }
+  
+  .manage-account-detail-title a {
+    margin-right: 5px;
+    color: #767676;
+  }
+  
+  .manage-account-detail-title .manage-account-detail-name {
+    font-weight: 500;
+    font-size: 20px;
+    color: #0f172a;
+  }
+  
+  .manage-account-detail-title .manage-account-detail-id {
+    color: #1d92ff;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0px 10px;
+  }
+  
+  .manage-account-detail-title .manage-account-detail-unpaid {
+    padding: 4px 12px;
+    border-radius: 200px;
+    background-color: #fffcf0;
+    font-weight: 400;
+    font-size: 16px;
+    color: #d4962a;
+    border: none;
+  }
+  
+  .manage-account-detail-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 40px 40px 40px;
+    background-color: #fff;
+    border-radius: 8px 8px 0px 0px;
+  }
+  
+  .manage-account-detail-main div{
+      width: 48%;
+      padding: 10px 0px;
+      border-bottom: 1px solid #F0F0F0;
+  }
+  
+  .manage-account-detail-main div p:first-child{
+      color: #64748B;
+      font-size: 16px;
+      font-weight: 400;
+  }* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f5f6f9;
+  }
+  
+  main {
+    display: flex;
+  }
+  
+  aside {
+    width: 15%;
+    overflow: auto;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding-left: 20px;
+  }
+  
+  .nav-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .nav-item {
+    width: 90%;
+  }
+  
+  .nav-row i {
+    width: 20%;
+    color: #64748b;
+    font-size: 12px;
+  }
+  
+  .nav-item i {
+    font-size: 18px;
+  }
+  
+  nav section span {
+    width: 70%;
+  }
+  
+  nav a {
+    color: #64748b;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #0f172a;
+    text-decoration: none;
+  }
+  
+  .nav-item-active {
+    color: #0f172a;
+    font-weight: 500;
+  }
+  
+  .header-right {
+    width: 20%;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+  }
+  
+  .manage-account-detail-content {
+    width: 85%;
+    margin-left: 18%;
+    margin-right: 3%;
+  }
+  
+  .manage-account-detail-title {
+    vertical-align: middle;
+  }
+  
+  .manage-account-detail-title a {
+    margin-right: 5px;
+    color: #767676;
+  }
+  
+  .manage-account-detail-title .manage-account-detail-name {
+    font-weight: 500;
+    font-size: 20px;
+    color: #0f172a;
+  }
+  
+  .manage-account-detail-title .manage-account-detail-id {
+    color: #1d92ff;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0px 10px;
+  }
+  
+  .manage-account-detail-title .manage-account-detail-unpaid {
+    padding: 4px 12px;
+    border-radius: 200px;
+    background-color: #fffcf0;
+    font-weight: 400;
+    font-size: 16px;
+    color: #d4962a;
+    border: none;
+  }
+  
+  .manage-account-detail-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 40px 40px 40px;
+    background-color: #fff;
+    border-radius: 8px 8px 0px 0px;
+  }
+  
+  .manage-account-detail-main div{
+      width: 48%;
+      padding: 10px 0px;
+      border-bottom: 1px solid #F0F0F0;
+  }
+  
+  .manage-account-detail-main div p:first-child{
+      color: #64748B;
+      font-size: 16px;
+      font-weight: 400;
+  }
+
+.manage-account-detail-change-password button{
+    color: #1890FF;
+    background-color: #F5FAFF;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 15px;
+}

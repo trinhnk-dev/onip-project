@@ -16,8 +16,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./style/manage.css" />
-    <title>Manage</title>
+    <link rel="stylesheet" href="./style/manageAccount.css" />
+    <title>Quản trị của kế toán</title>
   </head>
   <body>
     <main>
@@ -26,9 +26,9 @@
           <section class="nav-row">
             <div class="nav-item">
               <i class="fa-solid fa-house" style="color: #0f172a"></i>
-              <a href="./index.html" >Trang chủ</a>
+              <a href="./index.html">Trang chủ</a>
             </div>
-            <i style="font-size: 12px"></i>
+            <i></i>
           </section>
           <a
             class="nav-row"
@@ -40,13 +40,15 @@
           >
             <div class="nav-item">
               <i class="fa-solid fa-chart-line"></i>
-              <span >Kinh doanh</span>
+              <span class="nav-item-active">Kinh doanh</span>
             </div>
-            <i class="fa-solid fa-chevron-down" style="font-size: 12px"></i>
+            <i class="fa-solid fa-chevron-down"></i>
           </a>
           <div class="collapse" id="businessCollapse">
-            <a href="./sellingTour.html"><p>Tour đang bán</p></a>
-            <a href="./orderDetail.html" ><p>Đơn hàng</p></a>
+            <a href="./sellingTour.html" class="sub-nav-active"
+              ><p>Tour đang bán</p></a
+            >
+            <a href="./orderDetail.html"><p>Đơn hàng</p></a>
           </div>
           <a
             class="nav-row"
@@ -58,20 +60,20 @@
           >
             <div class="nav-item mb-2">
               <i class="fa-regular fa-rectangle-list"></i>
-              <span >Quản lý tour</span>
+              <span>Quản lý tour</span>
             </div>
-            <i class="fa-solid fa-chevron-up" style="font-size: 12px"></i>
+            <i class="fa-solid fa-chevron-up"></i>
           </a>
           <div class="collapse" id="manageTourCollapse">
-            <a href="./schedule.html" ><p>Lịch trình</p></a>
-            <a href="./sampleProduct.html" ><p>Sản phẩm mẫu</p></a>
+            <a href="./schedule.html"><p>Lịch trình</p></a>
+            <a href="./sampleProduct.html"><p>Sản phẩm mẫu</p></a>
           </div>
           <section class="nav-row">
             <div class="nav-item">
               <i class="fa-solid fa-user-group"></i>
               <a href="./customer.html">Khách hàng</a>
             </div>
-            <i style="font-size: 12px"></i>
+            <i></i>
           </section>
           <a
             class="nav-row"
@@ -83,44 +85,96 @@
           >
             <div class="nav-item">
               <i class="fa-solid fa-calculator"></i>
-              <span >Kế toán</span>
+              <span>Kế toán</span>
             </div>
-            <i class="fa-solid fa-chevron-down" style="font-size: 12px"></i>
+            <i class="fa-solid fa-chevron-down"></i>
           </a>
           <div class="collapse" id="accountantCollapse">
-            <a href="./purchaseList.html" ><p>Danh sách phiếu chi</p></a>
+            <a href="./purchaseList.html"><p>Danh sách phiếu chi</p></a>
             <a href="./receiveList.html"><p>Danh sách phiếu thu</p></a>
           </div>
           <section class="nav-row">
             <div class="nav-item">
               <i class="fa-solid fa-circle-exclamation"></i>
-              <a href="./manage.html" class="nav-item-active">Quản trị</a>
+              <a href="./manageAdmin.html">Quản trị Admin</a>
             </div>
-            <i style="font-size: 12px"></i>
+            <i></i>
+          </section>
+          <section class="nav-row">
+            <div class="nav-item">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <a href="./manageAccount.html">Quản trị Kế toán</a>
+            </div>
+            <i></i>
+          </section>
+          <section class="nav-row">
+            <div class="nav-item">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <a href="./manageSale.html">Quản trị Sale</a>
+            </div>
+            <i></i>
           </section>
         </nav>
       </aside>
-      <section class="home-content">
+      <section class="manage-account-detail-content">
         <header class="d-flex justify-content-between mb-4 mt-3">
-          <h3>Danh sách phiếu thu</h3>
-          <div class="d-flex justify-content-between align-items-center">
+          <h3>Phiếu Chi</h3>
+          <div
+            class="d-flex justify-content-around align-items-center header-right"
+          >
             <i class="fa-regular fa-bell"></i>
-            <div
-              class="avatar"
-              style="
-                border-radius: 50%;
-                width: 40px;
-                height: 40px;
-                background-color: black;
-              "
-            ></div>
+            <div class="avatar"></div>
             <div class="d-flex flex-column justify-content-center">
               <p class="m-0 fw-medium">Hoang</p>
               <p class="m-0">Administrator</p>
             </div>
-            <i class="fa-solid fa-chevron-down" style="font-size: 12px"></i>
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
         </header>
+        <section class="d-flex justify-content-between align-items-center mb-4">
+          <div class="empty"></div>
+          <div class="manage-account-detail-title-btn">
+            <button class="btn btn-primary btn-transaction-success">
+              Chỉnh Sửa
+            </button>
+          </div>
+        </section>
+        <section class="manage-account-detail-main">
+          <div >
+            <p>Tên đăng nhập</p>
+            <p>demoacv@gmail.com</p>
+          </div>
+          <div >
+            <p>Trạng thái</p>
+            <p>Đang hoạt động</p>
+          </div>
+          <div >
+            <p>Tên người dùng</p>
+            <p>Nguyễn Anh</p>
+          </div>
+          <div >
+            <p>Hoạt động gần đây</p>
+            <p>21/12/23 15:28:22</p>
+          </div>
+          <div >
+            <p>Nhóm</p>
+            <p>Sale</p>
+          </div>
+          <div >
+            <p>Ngày tạo</p>
+            <p>1/1/23 15:28:22</p>
+          </div>
+          <div >
+            <p>Người tạo</p>
+            <p>Phạm Nhật</p>
+          </div>
+          <div >
+            <p>Ngày cập nhật gần nhất</p>
+            <p>20/10/23 15:28:22</p>
+          </div>
+          <div class="empty border-bottom-0"></div>
+          <div class="manage-account-detail-change-password border-bottom-0"><button >Đổi mật khẩu</button></div>
+        </section>
       </section>
     </main>
     <script

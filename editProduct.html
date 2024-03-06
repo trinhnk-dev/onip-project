@@ -21,85 +21,101 @@
   </head>
   <body>
     <main>
-        <aside>
-            <nav>
-              <section class="nav-row">
-                <div class="nav-item">
-                  <i class="fa-solid fa-house" style="color: #0f172a"></i>
-                  <a href="./index.html" class="nav-item-active">Trang chủ</a>
-                </div>
-                <i style="font-size: 12px"></i>
-              </section>
-              <a
-                class="nav-row"
-                data-bs-toggle="collapse"
-                href="#businessCollapse"
-                role="button"
-                aria-expanded="false"
-                aria-controls="manageTourCollapse"
-              >
-                <div class="nav-item">
-                  <i class="fa-solid fa-chart-line"></i>
-                  <span>Kinh doanh</span>
-                </div>
-                <i class="fa-solid fa-chevron-down" style="font-size: 12px"></i>
-              </a>
-              <div class="collapse" id="businessCollapse">
-                <a href="./sellingTour.html"><p>Tour đang bán</p></a>
-                <a href="./orderDetail.html"><p>Đơn hàng</p></a>
-              </div>
-              <a
-                class="nav-row"
-                data-bs-toggle="collapse"
-                href="#manageTourCollapse"
-                role="button"
-                aria-expanded="false"
-                aria-controls="manageTourCollapse"
-              >
-                <div class="nav-item mb-2">
-                  <i class="fa-regular fa-rectangle-list"></i>
-                  <span>Quản lý tour</span>
-                </div>
-                <i class="fa-solid fa-chevron-up" style="font-size: 12px"></i>
-              </a>
-              <div class="collapse" id="manageTourCollapse">
-                <a href="./schedule.html"><p>Lịch trình</p></a>
-                <a href="./sampleProduct.html"><p>Sản phẩm mẫu</p></a>
-              </div>
-              <section class="nav-row">
-                <div class="nav-item">
-                  <i class="fa-solid fa-user-group"></i>
-                  <a href="./customer.html">Khách hàng</a>
-                </div>
-                <i style="font-size: 12px"></i>
-              </section>
-              <a
-                class="nav-row"
-                data-bs-toggle="collapse"
-                href="#accountantCollapse"
-                role="button"
-                aria-expanded="false"
-                aria-controls="manageTourCollapse"
-              >
-                <div class="nav-item">
-                  <i class="fa-solid fa-calculator"></i>
-                  <span>Kế toán</span>
-                </div>
-                <i class="fa-solid fa-chevron-down" style="font-size: 12px"></i>
-              </a>
-              <div class="collapse" id="accountantCollapse">
-                <a href="./purchaseList.html"><p>Danh sách phiếu chi</p></a>
-                <a href="./receiveList.html"><p>Danh sách phiếu thu</p></a>
-              </div>
-              <section class="nav-row">
-                <div class="nav-item">
-                  <i class="fa-solid fa-circle-exclamation"></i>
-                  <a href="./manage.html">Quản trị</a>
-                </div>
-                <i style="font-size: 12px"></i>
-              </section>
-            </nav>
-          </aside>
+      <aside>
+        <nav>
+          <section class="nav-row">
+            <div class="nav-item">
+              <i class="fa-solid fa-house" style="color: #0f172a"></i>
+              <a href="./index.html">Trang chủ</a>
+            </div>
+            <i></i>
+          </section>
+          <a
+            class="nav-row"
+            data-bs-toggle="collapse"
+            href="#businessCollapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="manageTourCollapse"
+          >
+            <div class="nav-item">
+              <i class="fa-solid fa-chart-line"></i>
+              <span class="nav-item-active">Kinh doanh</span>
+            </div>
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="collapse" id="businessCollapse">
+            <a href="./sellingTour.html" class="sub-nav-active"
+              ><p>Tour đang bán</p></a
+            >
+            <a href="./orderDetail.html"><p>Đơn hàng</p></a>
+          </div>
+          <a
+            class="nav-row"
+            data-bs-toggle="collapse"
+            href="#manageTourCollapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="manageTourCollapse"
+          >
+            <div class="nav-item mb-2">
+              <i class="fa-regular fa-rectangle-list"></i>
+              <span>Quản lý tour</span>
+            </div>
+            <i class="fa-solid fa-chevron-up"></i>
+          </a>
+          <div class="collapse" id="manageTourCollapse">
+            <a href="./schedule.html"><p>Lịch trình</p></a>
+            <a href="./sampleProduct.html"><p>Sản phẩm mẫu</p></a>
+          </div>
+          <section class="nav-row">
+            <div class="nav-item">
+              <i class="fa-solid fa-user-group"></i>
+              <a href="./customer.html">Khách hàng</a>
+            </div>
+            <i></i>
+          </section>
+          <a
+            class="nav-row"
+            data-bs-toggle="collapse"
+            href="#accountantCollapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="manageTourCollapse"
+          >
+            <div class="nav-item">
+              <i class="fa-solid fa-calculator"></i>
+              <span>Kế toán</span>
+            </div>
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="collapse" id="accountantCollapse">
+            <a href="./purchaseList.html"><p>Danh sách phiếu chi</p></a>
+            <a href="./receiveList.html"><p>Danh sách phiếu thu</p></a>
+          </div>
+          <section class="nav-row">
+            <div class="nav-item">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <a href="./manageAdmin.html">Quản trị Admin</a>
+            </div>
+            <i></i>
+          </section>
+          <section class="nav-row">
+            <div class="nav-item">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <a href="./manageAccount.html">Quản trị Kế toán</a>
+            </div>
+            <i></i>
+          </section>
+          <section class="nav-row">
+            <div class="nav-item">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <a href="./manageSale.html">Quản trị Sale</a>
+            </div>
+            <i></i>
+          </section>
+        </nav>
+      </aside>
       <section class="content">
         <header class="d-flex justify-content-between mb-4 mt-3">
           <h3>Sửa sản phẩm</h3>
