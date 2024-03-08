@@ -76,35 +76,35 @@ nav a:hover {
   background-color: #000;
 }
 
-.manage-account-detail-content {
+.create-account-detail-content {
   width: 85%;
   margin-left: 18%;
   margin-right: 3%;
 }
 
-.manage-account-detail-title {
+.create-account-detail-title {
   vertical-align: middle;
 }
 
-.manage-account-detail-title a {
+.create-account-detail-title a {
   margin-right: 5px;
   color: #767676;
 }
 
-.manage-account-detail-title .manage-account-detail-name {
+.create-account-detail-title .create-account-detail-name {
   font-weight: 500;
   font-size: 20px;
   color: #0f172a;
 }
 
-.manage-account-detail-title .manage-account-detail-id {
+.create-account-detail-title .create-account-detail-id {
   color: #1d92ff;
   font-weight: 500;
   font-size: 20px;
   margin: 0px 10px;
 }
 
-.manage-account-detail-title .manage-account-detail-unpaid {
+.create-account-detail-title .create-account-detail-unpaid {
   padding: 4px 12px;
   border-radius: 200px;
   background-color: #fffcf0;
@@ -114,7 +114,7 @@ nav a:hover {
   border: none;
 }
 
-.manage-account-detail-main {
+.create-account-detail-main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -123,13 +123,12 @@ nav a:hover {
   border-radius: 8px 8px 0px 0px;
 }
 
-.manage-account-detail-main div {
+.create-account-detail-main div {
   width: 48%;
   padding: 10px 0px;
-  border-bottom: 1px solid #f0f0f0;
 }
 
-.manage-account-detail-main div p:first-child {
+.create-account-detail-main div p:first-child {
   color: #64748b;
   font-size: 16px;
   font-weight: 400;
@@ -212,45 +211,32 @@ nav a:hover {
   background-color: #000;
 }
 
-.manage-account-detail-content {
+.create-account-detail-content {
   width: 85%;
   margin-left: 18%;
   margin-right: 3%;
 }
 
-.manage-account-detail-title {
-  vertical-align: middle;
+.create-account-detail-title-btn .btn-cancel {
+  border: 1px solid #edf2f7;
+  background-color: #fff;
 }
 
-.manage-account-detail-title a {
-  margin-right: 5px;
-  color: #767676;
-}
-
-.manage-account-detail-title .manage-account-detail-name {
+.create-account-detail-title-btn .btn-cancel a {
+  color: #64748b;
   font-weight: 500;
-  font-size: 20px;
-  color: #0f172a;
-}
-
-.manage-account-detail-title .manage-account-detail-id {
-  color: #1d92ff;
-  font-weight: 500;
-  font-size: 20px;
-  margin: 0px 10px;
-}
-
-.manage-account-detail-title .manage-account-detail-unpaid {
-  padding: 4px 12px;
-  border-radius: 200px;
-  background-color: #fffcf0;
-  font-weight: 400;
   font-size: 16px;
-  color: #d4962a;
-  border: none;
+  text-decoration: none;
 }
 
-.manage-account-detail-main {
+.create-account-detail-title-btn .btn-continue a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.create-account-detail-main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -259,19 +245,18 @@ nav a:hover {
   border-radius: 8px 8px 0px 0px;
 }
 
-.manage-account-detail-main div {
+.create-account-detail-main div {
   width: 48%;
   padding: 10px 0px;
-  border-bottom: 1px solid #f0f0f0;
 }
 
-.manage-account-detail-main div p:first-child {
+.create-account-detail-main div p:first-child {
   color: #64748b;
   font-size: 16px;
   font-weight: 400;
 }
 
-.manage-account-detail-change-password button {
+.create-account-detail-change-password button {
   color: #1890ff;
   background-color: #f5faff;
   padding: 10px 16px;

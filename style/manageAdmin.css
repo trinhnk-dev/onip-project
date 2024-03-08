@@ -102,7 +102,12 @@ nav a:hover {
   font-size: 14px;
 } */
 
-.manage-admin-add-order button i{
+.manage-admin-option a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.manage-admin-option button i{
   margin-left: 5px;
 }
 

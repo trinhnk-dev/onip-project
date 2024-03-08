@@ -16,8 +16,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./style/manageAccount.css" />
-    <title>Quản trị của kế toán</title>
+    <link rel="stylesheet" href="./style/createAccount.css" />
+    <title>Tạo mới tài khoản</title>
   </head>
   <body>
     <main>
@@ -116,9 +116,9 @@
           </section>
         </nav>
       </aside>
-      <section class="manage-account-detail-content">
+      <section class="create-account-detail-content">
         <header class="d-flex justify-content-between mb-4 mt-3">
-          <h3>Phiếu Chi</h3>
+          <h3>Quản Trị</h3>
           <div
             class="d-flex justify-content-around align-items-center header-right"
           >
@@ -133,50 +133,39 @@
         </header>
         <section class="d-flex justify-content-between align-items-center mb-4">
           <div class="empty"></div>
-          <div class="manage-account-detail-title-btn">
-            <button class="btn btn-primary ">
-              Chỉnh Sửa
+          <div class="create-account-detail-title-btn">
+            <button class="btn btn-cancel">
+              <a href="./manageAdmin.html">Hủy Bỏ</a>
+            </button>
+            <button class="btn btn-primary btn-continue">
+              <a href="#">Tiếp Tục</a>
             </button>
           </div>
         </section>
-        <section class="manage-account-detail-main">
+        <section class="create-account-detail-main">
           <div>
-            <p>Tên đăng nhập</p>
-            <p>demoacv@gmail.com</p>
+            <p>Tên đăng nhập <span style="color: red">*</span></p>
+            <input type="text" class="form-control" placeholder="Mật khẩu" />
+          </div>
+          <div>
+            <p>Nhóm <span style="color: red">*</span></p>
+            <input type="text" class="form-control" placeholder="Sale" />
+          </div>
+          <div>
+            <p>Tên người dùng <span style="color: red">*</span></p>
+            <input type="text" class="form-control" placeholder="Tên người dùng" />
+          </div>
+          <div>
+            <p>Nơi hoạt động <span style="color: red">*</span></p>
+            <input type="text" class="form-control" placeholder="Đại lý 1" />
+          </div>
+          <div>
+            <p>Mật khẩu <span style="color: red">*</span></p>
+            <input type="text" class="form-control" placeholder="Tạo mật khẩu" />
           </div>
           <div>
             <p>Trạng thái</p>
-            <p>Đang hoạt động</p>
-          </div>
-          <div>
-            <p>Tên người dùng</p>
-            <p>Nguyễn Anh</p>
-          </div>
-          <div>
-            <p>Hoạt động gần đây</p>
-            <p>21/12/23 15:28:22</p>
-          </div>
-          <div>
-            <p>Nhóm</p>
-            <p>Sale</p>
-          </div>
-          <div>
-            <p>Ngày tạo</p>
-            <p>1/1/23 15:28:22</p>
-          </div>
-          <div>
-            <p>Người tạo</p>
-            <p>Phạm Nhật</p>
-          </div>
-          <div>
-            <p>Ngày cập nhật gần nhất</p>
-            <p>20/10/23 15:28:22</p>
-          </div>
-          <div class="empty border-bottom-0"></div>
-          <div class="manage-account-detail-change-password border-bottom-0">
-            <button data-bs-toggle="modal" data-bs-target="#changePassword">
-              Đổi mật khẩu
-            </button>
+            <input type="text" class="form-control" placeholder="Đang hoạt động" />
           </div>
         </section>
       </section>
