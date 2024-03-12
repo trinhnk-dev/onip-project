@@ -279,6 +279,7 @@
                 </tbody>
               </table>
             </section>
+
             <section class="order-bill d-flex">
               <div class="order-bill-empty"></div>
               <div class="order-bill-content">
@@ -371,6 +372,13 @@
                 </tbody>
               </table>
             </section>
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#addCustomer"
+              class="btn btn-primary"
+            >
+              Thêm mới KH
+            </button>
           </section>
           <section class="order-contact-history">
             <h6>Lịch sử liên hệ</h6>
@@ -698,7 +706,7 @@
                             aria-label="Default select example"
                           >
                             <option selected>Chọn</option>
-                            <option >Nam</option>
+                            <option>Nam</option>
                             <option value="1">Nữ</option>
                           </select>
                         </td>
@@ -753,7 +761,7 @@
                             aria-label="Default select example"
                           >
                             <option selected>Chọn</option>
-                            <option >Nam</option>
+                            <option>Nam</option>
                             <option value="1">Nữ</option>
                           </select>
                         </td>
@@ -808,7 +816,7 @@
                             aria-label="Default select example"
                           >
                             <option selected>Chọn</option>
-                            <option >Nam</option>
+                            <option>Nam</option>
                             <option value="1">Nữ</option>
                           </select>
                         </td>
@@ -827,7 +835,6 @@
                           />
                         </td>
                       </tr>
-                      
                     </tbody>
                   </table>
                   <div class="modal-footer">
@@ -842,6 +849,530 @@
                       Lưu thay đổi
                     </button>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade modal-contact-note"
+            id="addCustomer"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    Sửa Thông Tin Khách Hàng
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <label class="form-label"
+                    >Loại khách hàng <span style="color: red">*</span></label
+                  >
+                  <div id="myTab" role="tablist">
+                    <div
+                      class="form-check form-check-inline"
+                      class="nav-item"
+                      role="presentation"
+                    >
+                      <input
+                        class="form-check-input active"
+                        type="radio"
+                        checked
+                        name="flexRadioDefault"
+                        id="personal-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#personal-tab-pane"
+                        role="tab"
+                        aria-controls="personal-tab-pane"
+                        aria-selected="true"
+                      />
+                      <label
+                        class="form-check-label form-check-type-customer"
+                        for="inlineRadio1"
+                        >Cá nhân</label
+                      >
+                    </div>
+                    <div
+                      class="form-check form-check-inline"
+                      class="nav-item"
+                      role="presentation"
+                    >
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="company-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#company-tab-pane"
+                        role="tab"
+                        aria-controls="company-tab-pane"
+                        aria-selected="false"
+                      />
+                      <label
+                        class="form-check-label form-check-type-customer"
+                        for="inlineRadio2"
+                        >Công ty</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="agency-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#agency-tab-pane"
+                        role="tab"
+                        aria-controls="agency-tab-pane"
+                        aria-selected="false"
+                      />
+                      <label
+                        class="form-check-label form-check-type-customer"
+                        for="inlineRadio2"
+                        >Đại lý</label
+                      >
+                    </div>
+                  </div>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      id="personal-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="personal-tab"
+                      tabindex="0"
+                      class="tab-pane fade show active"
+                    >
+                      <label class="form-label"
+                        >Thông tin khách hàng
+                        <span style="color: red">*</span></label
+                      >
+                      <div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            id="brother"
+                            value="brother"
+                            checked
+                          />
+                          <label
+                            class="form-check-label form-check-type-customer"
+                            for="inlineRadio1"
+                            >Anh</label
+                          >
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="sister"
+                            value="sister"
+                          />
+                          <label
+                            class="form-check-label form-check-type-customer"
+                            for="inlineRadio2"
+                            >Chị</label
+                          >
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="mrs"
+                            value="mrs"
+                          />
+                          <label
+                            class="form-check-label form-check-type-customer"
+                            for="inlineRadio2"
+                            >Cô</label
+                          >
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="mr"
+                            value="mr"
+                          />
+                          <label
+                            class="form-check-label form-check-type-customer"
+                            for="inlineRadio2"
+                            >Chú</label
+                          >
+                        </div>
+                      </div>
+
+                      <div class="add-customer-body-box">
+                        <div class="add-customer-body-item">
+                          <label class="form-label"
+                            >Họ tên <span style="color: red">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập tên"
+                          />
+                        </div>
+
+                        <div class="add-customer-body-item">
+                          <label class="form-label">Ngày sinh</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Chọn"
+                          />
+                        </div>
+                      </div>
+                      <div class="add-customer-body-box">
+                        <div class="add-customer-body-item">
+                          <label class="form-label"
+                            >Số điện thoại
+                            <span style="color: red">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập số điện thoại"
+                          />
+                        </div>
+
+                        <div class="add-customer-body-item">
+                          <label class="form-label">Email</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập email"
+                          />
+                        </div>
+                      </div>
+                      <label class="form-label">Ghi chú</label>
+                      <textarea
+                        class="form-control"
+                        rows="2"
+                        placeholder="Nhập nội dung"
+                      ></textarea>
+                    </div>
+                    <div
+                      id="company-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="company-tab"
+                      tabindex="0"
+                      class="tab-pane fade"
+                    >
+                      <div class="create-company">
+                        <label class="form-label"
+                          >Tên công ty <span style="color: red">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Nhập tên công ty"
+                        />
+                        <label class="form-label">Mã số thuế</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Nhập"
+                        />
+                        <label class="form-label">Số điện thoại</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Nhập"
+                        />
+                        <label class="form-label">Địa chỉ hóa đơn</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Nhập nội dung"
+                        />
+                      </div>
+                      <label class="form-label"
+                        >Thông tin người đại diện
+                        <span style="color: red">*</span></label
+                      >
+                      <div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            id="brother"
+                            value="brother"
+                            checked
+                          />
+                          <label
+                            class="form-check-label form-check-type-customer"
+                            for="inlineRadio1"
+                            >Anh</label
+                          >
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="sister"
+                            value="sister"
+                          />
+                          <label
+                            class="form-check-label form-check-type-customer"
+                            for="inlineRadio2"
+                            >Chị</label
+                          >
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="mrs"
+                            value="mrs"
+                          />
+                          <label
+                            class="form-check-label form-check-type-customer"
+                            for="inlineRadio2"
+                            >Cô</label
+                          >
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="mr"
+                            value="mr"
+                          />
+                          <label
+                            class="form-check-label form-check-type-customer"
+                            for="inlineRadio2"
+                            >Chú</label
+                          >
+                        </div>
+                      </div>
+
+                      <div class="add-customer-body-box">
+                        <div class="add-customer-body-item">
+                          <label class="form-label"
+                            >Họ tên <span style="color: red">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập tên"
+                          />
+                        </div>
+
+                        <div class="add-customer-body-item">
+                          <label class="form-label">Ngày sinh</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Chọn"
+                          />
+                        </div>
+                      </div>
+                      <div class="add-customer-body-box">
+                        <div class="add-customer-body-item">
+                          <label class="form-label"
+                            >Số điện thoại
+                            <span style="color: red">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập số điện thoại"
+                          />
+                        </div>
+
+                        <div class="add-customer-body-item">
+                          <label class="form-label">Email</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập email"
+                          />
+                        </div>
+                      </div>
+                      <label class="form-label">Ghi chú</label>
+                      <textarea
+                        class="form-control"
+                        rows="2"
+                        placeholder="Nhập nội dung"
+                      ></textarea>
+                    </div>
+                    <div
+                      id="agency-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="agency-tab"
+                      tabindex="0"
+                      class="tab-pane fade"
+                    >
+                      <div class="create-agency">
+                        <label class="form-label"
+                          >Tên đại lý <span style="color: red">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Nhập tên đại lý"
+                        />
+                        <label class="form-label">Mã số thuế</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Nhập"
+                        />
+                        <label class="form-label">Số điện thoại</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Nhập"
+                        />
+                        <label class="form-label">Địa chỉ hóa đơn</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Nhập nội dung"
+                        />
+                      </div>
+                      <label class="form-label"
+                        >Thông tin người đại diện
+                        <span style="color: red">*</span></label
+                      >
+                      <div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            id="brother"
+                            value="brother"
+                            checked
+                          />
+                          <label
+                            class="form-check-label form-check-type-customer"
+                            for="inlineRadio1"
+                            >Anh</label
+                          >
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="sister"
+                            value="sister"
+                          />
+                          <label
+                            class="form-check-label form-check-type-customer"
+                            for="inlineRadio2"
+                            >Chị</label
+                          >
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="mrs"
+                            value="mrs"
+                          />
+                          <label
+                            class="form-check-label form-check-type-customer"
+                            for="inlineRadio2"
+                            >Cô</label
+                          >
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="mr"
+                            value="mr"
+                          />
+                          <label
+                            class="form-check-label form-check-type-customer"
+                            for="inlineRadio2"
+                            >Chú</label
+                          >
+                        </div>
+                      </div>
+
+                      <div class="add-customer-body-box">
+                        <div class="add-customer-body-item">
+                          <label class="form-label"
+                            >Họ tên <span style="color: red">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập tên"
+                          />
+                        </div>
+
+                        <div class="add-customer-body-item">
+                          <label class="form-label">Ngày sinh</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Chọn"
+                          />
+                        </div>
+                      </div>
+                      <div class="add-customer-body-box">
+                        <div class="add-customer-body-item">
+                          <label class="form-label"
+                            >Số điện thoại
+                            <span style="color: red">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập số điện thoại"
+                          />
+                        </div>
+
+                        <div class="add-customer-body-item">
+                          <label class="form-label">Email</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập email"
+                          />
+                        </div>
+                      </div>
+                      <label class="form-label">Ghi chú</label>
+                      <textarea
+                        class="form-control"
+                        rows="2"
+                        placeholder="Nhập nội dung"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-cancel-modal"
+                    data-bs-dismiss="modal"
+                  >
+                    Hủy
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Thêm mới khách hàng
+                  </button>
                 </div>
               </div>
             </div>

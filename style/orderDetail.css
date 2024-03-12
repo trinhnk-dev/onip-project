@@ -196,6 +196,10 @@ nav a:hover {
   color: #94A3B8;
 }
 
+.modal-content .form-check .form-check-type-customer{
+  color: #000;
+}
+
 .form-control, .form-select {
   padding: 10px 16px;
 }
@@ -492,4 +496,30 @@ table{
 .modal-add-group-list td{
   padding: 10px 16px;
   vertical-align: middle;
+}
+
+.add-customer-body-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.add-customer-body-item {
+  width: 49%;
+  color: #64748b;
+}
+
+.create-company{
+  padding: 16px 15px 24px 15px;
+  background-color: #F8FAFC;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.create-agency{
+  padding: 16px 15px 24px 15px;
+  background-color: #F8FAFC;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
