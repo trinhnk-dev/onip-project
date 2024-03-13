@@ -130,6 +130,25 @@ nav a:hover {
   margin: 0;
 }
 
+.tour-detail-information p{
+  font-size: 14px;
+  font-weight: 400;
+  color: #475569;
+}
+
+.tour-detail-information p:first-child{
+  font-weight: 500;
+  font-size: 16px;
+  color: #1E293B;
+}
+
+.tour-detail-information i{
+  text-align: center;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+
 .tour-detail-id {
   color: #1890ff !important;
   font-size: 16px;
