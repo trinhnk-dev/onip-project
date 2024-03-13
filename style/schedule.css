@@ -42,7 +42,7 @@ aside {
   font-size: 12px;
 }
 
-.nav-item i{
+.nav-item i {
   font-size: 18px;
 }
 
@@ -65,11 +65,11 @@ nav a:hover {
   font-weight: 500;
 }
 
-.header-right{
+.header-right {
   width: 20%;
 }
 
-.avatar{
+.avatar {
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -91,16 +91,19 @@ nav a:hover {
   margin-right: 5px;
 }
 
-.schedule-filter .schedule-filter-item label{
-  color: #94A3B8;
+.schedule-filter .schedule-filter-item label {
+  color: #94a3b8;
   font-size: 14px;
   font-weight: 400;
-} */
-
-.schedule-filter .schedule-filter-item option{
+}
+*/ .schedule-filter .schedule-filter-item option {
   font-weight: 500;
   font-size: 14px;
-} 
+}
+
+.schedule-add-tour i {
+  margin-left: 5px;
+}
 
 .schedule-detail-table {
   border-radius: 4px;
@@ -198,3 +201,109 @@ nav a:hover {
   font-weight: 600;
 }
 
+.add-tour-body-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.schedule-add-tour-modal p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #94a3b8;
+}
+
+.add-tour-body-item {
+  width: 48%;
+  color: #64748b;
+}
+
+.schedule-add-tour-modal label {
+  font-weight: 400;
+  font-size: 16px;
+  color: #94a3b8;
+}
+
+.form-control,
+.form-select {
+  padding: 10px 16px;
+}
+
+.modal-body input,
+.modal-body textarea {
+  margin-bottom: 15px;
+}
+
+.modal-content {
+  --bs-modal-header-border-color: none;
+  --bs-modal-footer-border-color: none;
+}
+
+.form-control,
+.form-select {
+  padding: 10px 16px;
+}
+
+.modal-body input,
+.modal-body textarea,
+.modal-body select {
+  margin-bottom: 15px;
+}
+
+.add-tour-price-set {
+  border: 1px solid #EDF2F7;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.add-tour-price-set table{
+  margin-bottom: 0;
+}
+
+.add-tour-price-set tr th{
+  padding: 10px 15px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #0F172A;
+}
+
+.add-tour-price-set tr td{
+  vertical-align: middle;
+  width: 50%;
+  padding: 5px 15px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #0F172A;
+}
+
+.add-tour-price-set td input{
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: #0F172A;
+}
+
+.add-tour-type label{
+  font-weight: 400;
+  font-size: 14px;
+  color: #0F172A;
+}
+
+.add-tour-vat label{
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+
+.add-tour-reservation span{
+  font-weight: 400;
+  font-size: 16px;
+  color: #0F172A;
+}
+
+.add-tour-reservation i{
+  color: #1D92FF;
+  margin-left: 5px;
+  cursor: pointer;
+}

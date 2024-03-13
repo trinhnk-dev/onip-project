@@ -119,16 +119,16 @@
       <section class="schedule-content">
         <header class="d-flex justify-content-between mb-4 mt-3">
           <h3>Lịch trình</h3>
-          <div class="d-flex justify-content-around align-items-center header-right">
+          <div
+            class="d-flex justify-content-around align-items-center header-right"
+          >
             <i class="fa-regular fa-bell"></i>
-            <div
-              class="avatar"
-            ></div>
+            <div class="avatar"></div>
             <div class="d-flex flex-column justify-content-center">
               <p class="m-0 fw-medium">Hoang</p>
               <p class="m-0">Administrator</p>
             </div>
-            <i class="fa-solid fa-chevron-down" ></i>
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
         </header>
         <!-- <section class="tour-filter">
@@ -158,7 +158,21 @@
             </div>
           </div>
         </section> -->
-         <section class="schedule-detail">
+        <section
+          class="d-flex justify-content-between align-items-center schedule-add-tour"
+        >
+          <div class="schedule-search"></div>
+          <div>
+            <button
+              class="btn btn-primary mb-2"
+              data-bs-toggle="modal"
+              data-bs-target="#addTour"
+            >
+              Tạo Tour Mới <i class="fa-solid fa-circle-plus"></i>
+            </button>
+          </div>
+        </section>
+        <section class="schedule-detail">
           <table class="table schedule-detail-table">
             <tr>
               <th>Mã tour</th>
@@ -171,10 +185,13 @@
               <th>Trạng thái</th>
               <th></th>
             </tr>
-            <tr >
+            <tr>
               <td class="schedule-detail-id">PT6921</td>
               <td>
-                <p>Tour Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu 10N9D khởi hành ngày 25/11</p>
+                <p>
+                  Tour Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu 10N9D khởi
+                  hành ngày 25/11
+                </p>
                 <p>Thời lượng: 5 ngày 4 đêm</p>
                 <p>Điểm đến: Trung quốc</p>
               </td>
@@ -198,12 +215,19 @@
               <td class="schedule-detail-status">
                 <button>Mở bán</button>
               </td>
-              <td class="schedule-detail-action"><a href="./scheduleDetail.html"><i class="fa-solid fa-ellipsis-vertical"></i></a></td>
+              <td class="schedule-detail-action">
+                <a href="./scheduleDetail.html"
+                  ><i class="fa-solid fa-ellipsis-vertical"></i
+                ></a>
+              </td>
             </tr>
-            <tr >
+            <tr>
               <td class="schedule-detail-id">PT6921</td>
               <td>
-                <p>Tour Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu 10N9D khởi hành ngày 25/11</p>
+                <p>
+                  Tour Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu 10N9D khởi
+                  hành ngày 25/11
+                </p>
                 <p>Thời lượng: 5 ngày 4 đêm</p>
                 <p>Điểm đến: Trung quốc</p>
               </td>
@@ -227,12 +251,19 @@
               <td class="schedule-detail-status">
                 <button>Mở bán</button>
               </td>
-              <td class="schedule-detail-action"><a href="./scheduleDetail.html"><i class="fa-solid fa-ellipsis-vertical"></i></a></td>
+              <td class="schedule-detail-action">
+                <a href="./scheduleDetail.html"
+                  ><i class="fa-solid fa-ellipsis-vertical"></i
+                ></a>
+              </td>
             </tr>
-            <tr >
+            <tr>
               <td class="schedule-detail-id">PT6921</td>
               <td>
-                <p>Tour Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu 10N9D khởi hành ngày 25/11</p>
+                <p>
+                  Tour Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu 10N9D khởi
+                  hành ngày 25/11
+                </p>
                 <p>Thời lượng: 5 ngày 4 đêm</p>
                 <p>Điểm đến: Trung quốc</p>
               </td>
@@ -256,12 +287,19 @@
               <td class="schedule-detail-status">
                 <button>Mở bán</button>
               </td>
-              <td class="schedule-detail-action"><a href="./scheduleDetail.html"><i class="fa-solid fa-ellipsis-vertical"></i></a></td>
+              <td class="schedule-detail-action">
+                <a href="./scheduleDetail.html"
+                  ><i class="fa-solid fa-ellipsis-vertical"></i
+                ></a>
+              </td>
             </tr>
-            <tr >
+            <tr>
               <td class="schedule-detail-id">PT6921</td>
               <td class="schedule-detail-information">
-                <p>Tour Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu 10N9D khởi hành ngày 25/11</p>
+                <p>
+                  Tour Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu 10N9D khởi
+                  hành ngày 25/11
+                </p>
                 <p>Thời lượng: 5 ngày 4 đêm</p>
                 <p>Điểm đến: Trung quốc</p>
               </td>
@@ -286,13 +324,161 @@
                 <button>Full</button>
               </td>
               <td class="schedule-detail-action">
-                <a href="./scheduleDetail.html"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                <a href="./scheduleDetail.html"
+                  ><i class="fa-solid fa-ellipsis-vertical"></i
+                ></a>
               </td>
             </tr>
-            
           </table>
-        </section> 
-      </section>
+        </section>
+        <!-- modal -->
+        <div
+          class="modal fade"
+          id="addTour"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  Thêm mới Tour khởi hành
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body schedule-add-tour-modal">
+                <label class="form-label"
+                  >Sản phẩm mẫu <span style="color: red">*</span></label
+                >
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Chọn</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <label class="form-label"
+                  >Tên Tour <span style="color: red">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nhập tên"
+                />
+                <div class="add-tour-body-box">
+                  <div class="add-tour-body-item">
+                    <label class="form-label"
+                      >Ngày khởi hành <span style="color: red">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Chọn ngày"
+                    />
+                  </div>
+
+                  <div class="add-tour-body-item">
+                    <label class="form-label"
+                      >Số chỗ <span style="color: red">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Nhập số chỗ"
+                    />
+                  </div>
+                </div>
+                <h6>Thiết lập giá</h6>
+                <div class="add-tour-price-set">
+                  <table class="table add-tour-table">
+                    <tr class="table-light">
+                      <th>Đối tượng</th>
+                      <th>Giá</th>
+                    </tr>
+                    <tr>
+                      <td>Người lớn</td>
+                      <td>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Nhập giá"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Trẻ em (từ 2-11 tuổi)</td>
+                      <td>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Nhập giá"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Trẻ em (dưới 2 tuổi)</td>
+                      <td>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Nhập giá"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <label class="form-label"
+                  >Loại tour <span style="color: red">*</span></label
+                >
+                <div class="add-tour-type mb-3">
+                  <input class="form-check-input" type="radio" checked />
+                  <label
+                    class="form-check-label form-check-inline form-check-type-tour"
+                    for="inlineRadio2"
+                    >Tour đoàn ghép</label
+                  >
+                  <input class="form-check-input" type="radio" />
+                  <label
+                    class="form-check-label form-check-inline form-check-type-customer"
+                    for="inlineRadio2"
+                    >Tour đoàn riêng</label
+                  >
+                </div>
+                <div class="form-check add-tour-vat mb-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    VAT
+                  </label>
+                </div>
+                <div class="add-tour-reservation">
+                  <span>Giữ chỗ 24h</span>
+                  <i class="fa-regular fa-pen-to-square"></i>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-cancel-modal"
+                  data-bs-dismiss="modal"
+                >
+                  Hủy
+                </button>
+                <button type="button" class="btn btn-primary">Tạo tour</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <script
