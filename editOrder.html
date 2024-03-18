@@ -345,28 +345,33 @@
                   <label class="form-label"
                     >Loại khách hàng <span style="color: red">*</span></label
                   >
-                  <div>
-                    <div class="form-check form-check-inline">
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="form-check d-flex align-items-center p-0">
                       <input
-                        class="form-check-input"
+                        class="input-radio"
                         type="radio"
                         name="inlineRadioOptions"
                         id="personal"
                         value="personal"
+                        checked
                       />
-                      <label class="form-check-label" for="inlineRadio1"
+                      <label
+                        class="form-check-label form-check-type-customer"
+                        for="inlineRadio1"
                         >Cá nhân</label
                       >
                     </div>
-                    <div class="form-check form-check-inline">
+                    <div class="form-check d-flex align-items-center">
                       <input
-                        class="form-check-input"
+                        class="input-radio"
                         type="radio"
                         name="inlineRadioOptions"
                         id="agenncy"
                         value="agenncy"
                       />
-                      <label class="form-check-label" for="inlineRadio2"
+                      <label
+                        class="form-check-label form-check-type-customer"
+                        for="inlineRadio2"
                         >Đại lý</label
                       >
                     </div>
@@ -375,52 +380,53 @@
                     >Thông tin khách hàng
                     <span style="color: red">*</span></label
                   >
-                  <div>
-                    <div class="form-check form-check-inline">
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="form-check d-flex align-items-center p-0">
                       <input
-                        class="form-check-input"
+                        class="input-radio"
                         type="radio"
                         name="inlineRadioOptions"
                         id="brother"
                         value="brother"
+                        checked
                       />
-                      <label class="form-check-label" for="inlineRadio1"
+                      <label class="form-check-label form-check-type-customer" for="inlineRadio1"
                         >Anh</label
                       >
                     </div>
-                    <div class="form-check form-check-inline">
+                    <div class="form-check d-flex align-items-center">
                       <input
-                        class="form-check-input"
+                        class="input-radio"
                         type="radio"
                         name="inlineRadioOptions"
                         id="sister"
                         value="sister"
                       />
-                      <label class="form-check-label" for="inlineRadio2"
+                      <label class="form-check-label form-check-type-customer" for="inlineRadio2"
                         >Chị</label
                       >
                     </div>
-                    <div class="form-check form-check-inline">
+                    <div class="form-check d-flex align-items-center">
                       <input
-                        class="form-check-input"
+                        class="input-radio"
                         type="radio"
                         name="inlineRadioOptions"
                         id="mrs"
                         value="mrs"
                       />
-                      <label class="form-check-label" for="inlineRadio2"
+                      <label class="form-check-label form-check-type-customer" for="inlineRadio2"
                         >Cô</label
                       >
                     </div>
-                    <div class="form-check form-check-inline">
+                    <div class="form-check d-flex align-items-center">
                       <input
-                        class="form-check-input"
+                        class="input-radio"
                         type="radio"
                         name="inlineRadioOptions"
                         id="mr"
                         value="mr"
                       />
-                      <label class="form-check-label" for="inlineRadio2"
+                      <label class="form-check-label form-check-type-customer" for="inlineRadio2"
                         >Chú</label
                       >
                     </div>
@@ -428,16 +434,18 @@
                   <label class="form-label"
                     >Họ tên <span style="color: red">*</span></label
                   >
-                  <input type="text" class="form-control" />
+                  <input type="text" class="form-control" placeholder="Nhập họ tên"/>
                   <div class="order-body-box">
                     <div class="order-body-item">
-                        <label class="form-label">Số điện thoại<span style="color: red">*</span></label>
-                        <input type="text" class="form-control" />
+                      <label class="form-label"
+                        >Số điện thoại<span style="color: red">*</span></label
+                      >
+                      <input type="text" class="form-control" placeholder="Nhập số điện thoai"/>
                     </div>
-                    
+
                     <div class="order-body-item">
-                        <label class="form-label">Email</label>
-                        <input type="text" class="form-control" />
+                      <label class="form-label">Email</label>
+                      <input type="text" class="form-control" placeholder="Nhập email"/>
                     </div>
                   </div>
                   <label class="form-label">Ghi chú</label>

@@ -238,6 +238,10 @@ nav a:hover {
   color: #94A3B8;
 }
 
+.modal-header{
+  background-color: #F8FAFC;
+}
+
 .form-control, .form-select {
   padding: 10px 16px;
 }
@@ -249,4 +253,16 @@ nav a:hover {
 .modal-content {
   --bs-modal-header-border-color: none;
   --bs-modal-footer-border-color: none;
+}
+
+.btn-cancel-modal {
+  background-color: #eff5ff;
+  padding: 6px 12px;
+  transition: 0.15s all;
+}
+
+.btn-cancel-modal:hover {
+  background-color: #eff5ff;
+  opacity: 0.75;
+  transition: 0.15s all;
 }

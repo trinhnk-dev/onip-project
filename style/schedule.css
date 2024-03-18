@@ -227,8 +227,12 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-.schedule-add-tour-modal select p{
-  
+.schedule-add-tour-modal .form-select option {
+  position: relative;
+}
+
+.schedule-add-tour-modal .form-select .test{
+  position: absolute;
 }
 
 .schedule-add-tour-modal p {
@@ -246,6 +250,10 @@ nav a:hover {
   font-weight: 400;
   font-size: 16px;
   color: #94a3b8;
+}
+
+.modal-header{
+  background-color: #F8FAFC;
 }
 
 .form-control,
@@ -272,6 +280,25 @@ nav a:hover {
 .modal-body textarea,
 .modal-body select {
   margin-bottom: 15px;
+}
+
+.modal-body .input-radio{
+  margin-bottom: 0;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+.btn-cancel-modal {
+  background-color: #eff5ff;
+  padding: 6px 12px;
+  transition: 0.15s all;
+}
+
+.btn-cancel-modal:hover {
+  background-color: #eff5ff;
+  opacity: 0.75;
+  transition: 0.15s all;
 }
 
 .add-tour-price-set {

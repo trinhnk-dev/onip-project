@@ -865,7 +865,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                    Sửa Thông Tin Khách Hàng
+                    Thêm Mới Khách Hàng
                   </h1>
                   <button
                     type="button"
@@ -878,23 +878,27 @@
                   <label class="form-label"
                     >Loại khách hàng <span style="color: red">*</span></label
                   >
-                  <div id="myTab" role="tablist">
+                  <div
+                    id="myTab"
+                    role="tablist"
+                    class="d-flex align-items-center mb-3 "
+                  >
                     <div
-                      class="form-check form-check-inline"
+                      class="form-check d-flex align-items-center p-0"
                       class="nav-item"
                       role="presentation"
                     >
                       <input
-                        class="form-check-input active"
+                        class="input-radio"
                         type="radio"
-                        checked
-                        name="flexRadioDefault"
+                        name="flexRadioDefault1"
                         id="personal-tab"
                         data-bs-toggle="tab"
                         data-bs-target="#personal-tab-pane"
                         role="tab"
                         aria-controls="personal-tab-pane"
                         aria-selected="true"
+                        checked
                       />
                       <label
                         class="form-check-label form-check-type-customer"
@@ -903,14 +907,14 @@
                       >
                     </div>
                     <div
-                      class="form-check form-check-inline"
+                      class="form-check d-flex align-items-center"
                       class="nav-item"
                       role="presentation"
                     >
                       <input
-                        class="form-check-input"
+                        class="input-radio"
                         type="radio"
-                        name="inlineRadioOptions"
+                        name="flexRadioDefault1"
                         id="company-tab"
                         data-bs-toggle="tab"
                         data-bs-target="#company-tab-pane"
@@ -924,11 +928,11 @@
                         >Công ty</label
                       >
                     </div>
-                    <div class="form-check form-check-inline">
+                    <div class="form-check d-flex align-items-center">
                       <input
-                        class="form-check-input"
+                        class="input-radio"
                         type="radio"
-                        name="inlineRadioOptions"
+                        name="flexRadioDefault1"
                         id="agency-tab"
                         data-bs-toggle="tab"
                         data-bs-target="#agency-tab-pane"
@@ -955,11 +959,12 @@
                         >Thông tin khách hàng
                         <span style="color: red">*</span></label
                       >
-                      <div>
-                        <div class="form-check form-check-inline">
+                      <div class="d-flex align-items-center mb-3">
+                        <div class="form-check d-flex align-items-center p-0">
                           <input
-                            class="form-check-input"
+                            class="input-radio"
                             type="radio"
+                            name="flexRadioDefault2"
                             id="brother"
                             value="brother"
                             checked
@@ -970,11 +975,11 @@
                             >Anh</label
                           >
                         </div>
-                        <div class="form-check form-check-inline">
+                        <div class="form-check d-flex align-items-center">
                           <input
-                            class="form-check-input"
+                            class="input-radio"
                             type="radio"
-                            name="inlineRadioOptions"
+                            name="flexRadioDefault2"
                             id="sister"
                             value="sister"
                           />
@@ -984,11 +989,11 @@
                             >Chị</label
                           >
                         </div>
-                        <div class="form-check form-check-inline">
+                        <div class="form-check d-flex align-items-center">
                           <input
-                            class="form-check-input"
+                            class="input-radio"
                             type="radio"
-                            name="inlineRadioOptions"
+                            name="flexRadioDefault2"
                             id="mrs"
                             value="mrs"
                           />
@@ -998,11 +1003,11 @@
                             >Cô</label
                           >
                         </div>
-                        <div class="form-check form-check-inline">
+                        <div class="form-check d-flex align-items-center">
                           <input
-                            class="form-check-input"
+                            class="input-radio"
                             type="radio"
-                            name="inlineRadioOptions"
+                            name="flexRadioDefault2"
                             id="mr"
                             value="mr"
                           />

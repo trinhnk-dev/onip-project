@@ -228,6 +228,10 @@ nav a:hover {
   font-weight: 600;
 }
 
+.modal-header{
+  background-color: #F8FAFC;
+}
+
 .modal-content label{
   color: #94A3B8;
 }

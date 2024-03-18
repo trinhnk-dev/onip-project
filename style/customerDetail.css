@@ -335,6 +335,10 @@ nav a:hover {
   margin-bottom: 0;
 }
 
+.modal-header{
+  background-color: #F8FAFC;
+}
+
 .modal-content {
   --bs-modal-header-border-color: none;
   --bs-modal-footer-border-color: none;
@@ -342,4 +346,16 @@ nav a:hover {
 
 .modal-body input {
   margin-bottom: 15px;
+}
+
+.btn-cancel-modal {
+  background-color: #eff5ff;
+  padding: 6px 12px;
+  transition: 0.15s all;
+}
+
+.btn-cancel-modal:hover {
+  background-color: #eff5ff;
+  opacity: 0.75;
+  transition: 0.15s all;
 }

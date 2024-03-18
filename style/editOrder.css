@@ -199,7 +199,8 @@ nav a:hover {
   font-weight: 600;
 }
 
-.form-control, .form-select {
+.form-control,
+.form-select {
   padding: 10px 16px;
 }
 
@@ -224,15 +225,15 @@ nav a:hover {
 .order-information .order-information-service a {
   font-weight: 600;
   font-size: 16px;
-  color: #1D92FF;
+  color: #1d92ff;
   text-transform: uppercase;
   cursor: pointer;
   width: 80%;
 }
 
-.order-information-user a i{
-    color: #1D92FF;
-    cursor: pointer;
+.order-information-user a i {
+  color: #1d92ff;
+  cursor: pointer;
 }
 
 .order-information-title {
@@ -300,41 +301,41 @@ nav a:hover {
 }
 
 .order-bill {
-    width: 30%;
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 8px;
-    height: fit-content;
-  }
-  
-  .order-bill h6 {
-    margin-bottom: 20px;
-    font-weight: 600;
-  }
-  
-  .order-bill div {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .order-bill div p {
-    font-size: 14px;
-    font-weight: 400;
-  }
-  
-  .discount-label {
-    color: #1d92ff;
-  }
-  
-  .order-bill div .payment-label {
-    font-weight: 600;
-  }
-  
-  .order-bill div .payment-amount {
-    color: #1d92ff;
-    font-size: 16px;
-    font-weight: 600;
-  }
+  width: 30%;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.order-bill h6 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.order-bill div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-bill div p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.discount-label {
+  color: #1d92ff;
+}
+
+.order-bill div .payment-label {
+  font-weight: 600;
+}
+
+.order-bill div .payment-amount {
+  color: #1d92ff;
+  font-size: 16px;
+  font-weight: 600;
+}
 
 /* .order-group-list{
     padding: 10px 0px;
@@ -404,20 +405,25 @@ nav a:hover {
 }
 
 .order-body-box {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  
-  .order-body-item {
-    width: 49%;
-    color: #64748b;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
 
-  .modal-body input, .modal-body textarea{
-    margin-bottom: 15px;
-  }
+.order-body-item {
+  width: 49%;
+  color: #64748b;
+}
+
+.modal-header {
+  background-color: #f8fafc;
+}
+
+.modal-body input,
+.modal-body textarea {
+  margin-bottom: 15px;
+}
 
 .modal-body input,
 .modal-body select,
@@ -425,13 +431,24 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
+.modal-body .input-radio{
+  margin-bottom: 0;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
 .modal-content {
   --bs-modal-header-border-color: none;
   --bs-modal-footer-border-color: none;
 }
 
-.modal-content label{
-  color: #94A3B8;
+.modal-content label {
+  color: #94a3b8;
+}
+
+.modal-content .form-check .form-check-type-customer{
+  color: #000;
 }
 
 .create-receive-bill-modal input,

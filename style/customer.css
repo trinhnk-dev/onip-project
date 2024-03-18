@@ -144,10 +144,26 @@ nav a:hover {
   font-size: 14px;
 }
 
+.modal-header{
+  background-color: #F8FAFC;
+}
+
 .form-control{
   padding: 10px 16px;
 }
 
 .modal-body input{
   margin-bottom: 15px;
+}
+
+.btn-cancel-modal {
+  background-color: #eff5ff;
+  padding: 6px 12px;
+  transition: 0.15s all;
+}
+
+.btn-cancel-modal:hover {
+  background-color: #eff5ff;
+  opacity: 0.75;
+  transition: 0.15s all;
 }
