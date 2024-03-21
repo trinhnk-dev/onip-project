@@ -425,11 +425,10 @@
                   <input type="text" class="form-control" />
                   <div>
                     <label class="form-label">Tệp đính kèm</label>
-                    <input
-                      type="upload"
-                      class="form-control"
-                      placeholder="Upload"
-                    />
+                    <div class="input-file">
+                      <div class="upload-image"><i class="fa-solid fa-upload"></i>Tải tệp</div>
+                      <input type="file" id="input-upload" name="fileInput">
+                    </div>
                   </div>
                   <div>
                     <label class="form-label"
@@ -517,6 +516,10 @@
                     class="form-control"
                     placeholder="Dán liên kết"
                   />
+                  <div class="input-file">
+                    <div class="upload-image"><i class="fa-solid fa-upload"></i>Tải tệp</div>
+                    <input type="file" id="input-upload" name="fileInput">
+                  </div>
                 </div>
                 <div class="modal-footer">
                   <button
